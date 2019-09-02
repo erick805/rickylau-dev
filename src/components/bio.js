@@ -93,8 +93,7 @@ const Bio = () => {
           imgStyle={{
             borderRadius: `25%`,
           }}
-        />
-        {"  "}
+        />{" "}
         {"LinkedIn: "}
         <a href={`https://www.linkedin.com/in/rickylaudev/`}>rickylaudev</a>
       </p>

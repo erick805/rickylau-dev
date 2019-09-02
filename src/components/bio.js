@@ -21,6 +21,13 @@ const Bio = () => {
           }
         }
       }
+      github: file(absolutePath: { regex: "/github.png/" }) {
+        childImageSharp {
+          fixed(width: 25, height: 25) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       site {
         siteMetadata {
           author
@@ -32,7 +39,7 @@ const Bio = () => {
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
+  const { author, github, social } = data.site.siteMetadata
   return (
     <div
       style={{
@@ -54,7 +61,18 @@ const Bio = () => {
         }}
       />
       <p>
-        {/* <Image /> */}
+        <Image
+          fixed={data.github.childImageSharp.fixed}
+          alt={author}
+          style={{
+            minWidth: 15,
+            borderRadius: `100%`,
+          }}
+          imgStyle={{
+            borderRadius: `25%`,
+          }}
+        />
+        {"   "}
         {"GitHub: "}
         <a href={`https://github.com/rickylaufitness`}>rickylaufitness</a>
         {" | "}

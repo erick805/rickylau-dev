@@ -57,12 +57,11 @@ const Bio = () => {
         {/* Written by <strong>{author}</strong> who lives and works in San
         Francisco building useful things.
         {` `} */}
+        {/* <img src="" */}
         {"GitHub: "}
         <a href={`https://github.com/rickylaufitness`}>rickylaufitness</a>
         {" | "}
         {"LinkedIn: "}
-        <a href={`https://www.linkedin.com/in/rickylaudev/`}></a>
-        {" | "}
         <a href={`https://www.linkedin.com/in/rickylaudev/`}>rickylaudev</a>
       </p>
     </div>

@@ -28,6 +28,13 @@ const Bio = () => {
           }
         }
       }
+      linkedin: file(absolutePath: { regex: "/linkedin.png/" }) {
+        childImageSharp {
+          fixed(width: 25, height: 25) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       site {
         siteMetadata {
           author
@@ -72,10 +79,22 @@ const Bio = () => {
             borderRadius: `25%`,
           }}
         />
-        {"   "}
+        {"  "}
         {"GitHub: "}
         <a href={`https://github.com/rickylaufitness`}>rickylaufitness</a>
-        {" | "}
+        {" | "}{" "}
+        <Image
+          fixed={data.linkedin.childImageSharp.fixed}
+          alt={author}
+          style={{
+            minWidth: 15,
+            borderRadius: `100%`,
+          }}
+          imgStyle={{
+            borderRadius: `25%`,
+          }}
+        />
+        {"  "}
         {"LinkedIn: "}
         <a href={`https://www.linkedin.com/in/rickylaudev/`}>rickylaudev</a>
       </p>

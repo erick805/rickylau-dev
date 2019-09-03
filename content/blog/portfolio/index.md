@@ -17,6 +17,6 @@ First person endless runner with webcam capture motion machine learning.
 
 ## Vintage Vidya Games
 
-[vintage vidya games](https://vintage-vidya-games.herokuapp.com/)
+[vintage-vidya-games](https://vintage-vidya-games.herokuapp.com/)
 
 NES styled full stack e-commerce website with sound. (not mobile friendly currently)

@@ -7,6 +7,7 @@ module.exports = {
     social: {
       linkedin: `rickylaudev`,
     },
+    github: `https://github.com/rickylaufitness`,
   },
   plugins: [
     {

@@ -23,8 +23,9 @@ const Bio = () => {
       }
       github: file(absolutePath: { regex: "/github.png/" }) {
         childImageSharp {
-          fixed(width: 25, height: 25) {
+          fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
+            // ...GatsbyImageSharpFluid
           }
         }
       }
@@ -41,6 +42,8 @@ const Bio = () => {
           social {
             twitter
           }
+          github
+          social
         }
       }
     }
@@ -58,7 +61,7 @@ const Bio = () => {
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
         style={{
-          marginRight: rhythm(1 / 2),
+          marginRight: rhythm(3 / 4),
           marginBottom: 0,
           minWidth: 50,
           borderRadius: `100%`,
@@ -69,32 +72,33 @@ const Bio = () => {
       />
       <p>
         <Image
-          fixed={data.github.childImageSharp.fixed}
-          alt={author}
+          fixed={data.github.childImageSharp.fluid}
+          alt={github}
           style={{
+            // display: flex,
             minWidth: 15,
             borderRadius: `100%`,
           }}
           imgStyle={{
             borderRadius: `25%`,
+            marginTop: 10,
           }}
         />
-        {"  "}
-        {"GitHub: "}
-        <a href={`https://github.com/rickylaufitness`}>rickylaufitness</a>
-        {" | "}{" "}
+        {"  "}{" "}
+        <a href={`https://github.com/rickylaufitness`}>rickylaufitness</a>{" "}
         <Image
           fixed={data.linkedin.childImageSharp.fixed}
           alt={author}
           style={{
             minWidth: 15,
             borderRadius: `100%`,
+            marginTop: 15,
+            marginLeft: 15,
           }}
           imgStyle={{
             borderRadius: `25%`,
           }}
         />{" "}
-        {"LinkedIn: "}
         <a href={`https://www.linkedin.com/in/rickylaudev/`}>rickylaudev</a>
       </p>
     </div>

@@ -8,6 +8,7 @@ module.exports = {
       twitter,
     },
     github: `https://github.com/rickylaufitness`,
+    portfolio: `portfolio`,
   },
   plugins: [
     {

@@ -23,9 +23,8 @@ const Bio = () => {
       }
       github: file(absolutePath: { regex: "/github.png/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 25, height: 25) {
             ...GatsbyImageSharpFixed
-            // ...GatsbyImageSharpFluid
           }
         }
       }
@@ -42,14 +41,12 @@ const Bio = () => {
           social {
             twitter
           }
-          github
-          social
         }
       }
     }
   `)
 
-  const { author, github, social } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata
   return (
     <div
       style={{
@@ -72,8 +69,8 @@ const Bio = () => {
       />
       <p>
         <Image
-          fixed={data.github.childImageSharp.fluid}
-          alt={github}
+          fixed={data.github.childImageSharp.fixed}
+          alt={author}
           style={{
             // display: flex,
             minWidth: 15,
@@ -81,7 +78,7 @@ const Bio = () => {
           }}
           imgStyle={{
             borderRadius: `25%`,
-            marginTop: 10,
+            // marginTop: 10,
           }}
         />
         {"  "}{" "}
@@ -92,11 +89,11 @@ const Bio = () => {
           style={{
             minWidth: 15,
             borderRadius: `100%`,
-            marginTop: 15,
             marginLeft: 15,
           }}
           imgStyle={{
             borderRadius: `25%`,
+            // marginTop: 10,
           }}
         />{" "}
         <a href={`https://www.linkedin.com/in/rickylaudev/`}>rickylaudev</a>

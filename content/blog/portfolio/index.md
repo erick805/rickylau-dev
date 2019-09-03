@@ -1,4 +1,4 @@
 ---
-title: Portfolio
-# description: Full Stack Developer. Fitness Enthusiast. Problem Solver.
+title: VisualNYC
+description: Interactive map of New York City featuring data visualizations of crime statistics based on NYC open data.
 ---

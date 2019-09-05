@@ -9,6 +9,8 @@ Link: [visualnyc.net](http://www.visualnyc.net/)
 
 Capstone Presentation: [https://youtu.be/wW63u2Y1gsk](https://youtu.be/wW63u2Y1gsk)
 
+Github: [https://github.com/1904cs-charlie-owl/VisualNYC](https://github.com/1904cs-charlie-owl/VisualNYC)
+
 Interactive map of New York City featuring data visualizations of crime statistics based on NYC open data.
 
 Map can be adjusted to display only crimes by: 1. time of day, 2. day of the week, 3. type of crime, etc.

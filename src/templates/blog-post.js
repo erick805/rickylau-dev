@@ -35,9 +35,7 @@ class BlogPostTemplate extends React.Component {
                 display: `block`,
                 marginBottom: rhythm(1),
               }}
-            >
-              {/* {post.frontmatter.date} */}
-            </p>
+            ></p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr

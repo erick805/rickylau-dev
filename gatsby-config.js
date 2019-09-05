@@ -4,9 +4,6 @@ module.exports = {
     author: `Ricky Lau`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
-    social: {
-      twitter,
-    },
     github: `https://github.com/rickylaufitness`,
     portfolio: `portfolio`,
   },

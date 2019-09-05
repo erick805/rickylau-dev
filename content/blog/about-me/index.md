@@ -21,10 +21,10 @@ It was a very small startup consisting of two people, and that was where I first
 
 Editing html and css within shopify's platform.
 
-I enjoyed it very much so, and once finally finishing my degree in Kinesiology decided to venture into the world of code.
+I enjoyed it very much so, and once finally finishing my degree in Kinesiology, decided to venture into the world of code.
 
 My first few months were self guided study with a couple of udemy courses and youtube videos and eventually I decided to invest into a bootcamp in Fall of 2018. I applied early 2019 and was immediately accepted into [Fullstack Academy of Code](https://www.fullstackacademy.com/).
 
-Where I graduated, and am currently working as a Teaching Fellow for the upcoming cohort of WDF 1909.
+Where I graduated, and am currently working as a Teaching Fellow for the upcoming cohort of 1909 WDF.
 
-I hope to combine my passions in tech, fitness, and business and bring use to the world!
+I hope to combine my passions in tech, fitness, and business along with my daredevil mentality and grit rigor to bring use to the world!

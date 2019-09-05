@@ -9,7 +9,7 @@ description: " "
 
 Interactive map of New York City featuring data visualizations of crime statistics based on NYC open data.
 
-## Hackathon
+## [Hackathon](http://localhost:8000/hackathon/)
 
 [github.com/space-runner-prototype](https://github.com/space-runner-prototype/space-runner)
 

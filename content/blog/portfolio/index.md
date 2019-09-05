@@ -3,7 +3,7 @@ title: Welcome to my Portfolio
 description: " "
 ---
 
-## VisualNYC
+##VisualNYC
 
 [visualnyc.net](http://www.visualnyc.net/)
 

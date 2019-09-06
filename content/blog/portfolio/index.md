@@ -3,13 +3,13 @@ title: Welcome to my Portfolio
 description: " "
 ---
 
-##[VisualNYC](http://localhost:8000/visualnyc/)
+##[VisualNYC](https://rickylau.dev/visualnyc/)
 
 [visualnyc.net](http://www.visualnyc.net/)
 
 Interactive map of New York City featuring data visualizations of crime statistics based on NYC open data.
 
-## [Hackathon](http://localhost:8000/hackathon/)
+## [Space Runner](https://rickylau.dev/hackathon/)
 
 [github.com/space-runner-prototype](https://github.com/space-runner-prototype/space-runner)
 

@@ -1,5 +1,5 @@
 ---
-title: Hackathon
+title: Space Runner
 description: First person endless runner with webcam capture motion machine learning.
 ---
 

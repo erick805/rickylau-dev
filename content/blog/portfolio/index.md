@@ -15,7 +15,7 @@ Interactive map of New York City featuring data visualizations of crime statisti
 
 First person endless runner with webcam capture motion machine learning.
 
-## Vintage Vidya Games
+## [Vintage Vidya Games](https://rickylau.dev/vvg/)
 
 [vintage-vidya-games](https://vintage-vidya-games.herokuapp.com/)
 

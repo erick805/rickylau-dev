@@ -16,7 +16,7 @@ I am also going to refer to the acronym -
 
 So next time when you approach a unit test, you will know. did I CARD it? or CRAD it?
 
-Clean your code environment & make sure you are in the right test suite.
+##Clean your code environment & make sure you are in the right test suite.
 
 Only work with one set of test suites at a time.
 Make sure you are looking at the right suite of test specs & click on the spec if you can, cd if there is a deeper directory and run test script, or pending other test specs manually works as well.
@@ -34,23 +34,41 @@ Here we have an example of an unclean code environment.
 
 ```js
 class Stack {
-  // ...
-}
+  constructor() {
+    this.store = []
+  }
+
+  getStack() {
+    return this.stoer
+  }
+
+  add(item) {
+    this.store.push(item);
+
+    return this
+  }
+
+  remove: () {
+    return this.store.pop()
+  }
+
 ```
 
-If you look closely, you will notice the signals your developer tools and code editor are giving to you.
+If you look closely, you will notice the signals your developer tools and code editor are giving to you if you have a linter installed.
 
-Stars were placed to indicate color changes in my vs code environment.
+![](2019-09-07-20-59-53.png)
 
 I noticed that I was missing a closing bracket because when I clicked on the last bracket on my class. It indicated to me that the closing bracket was on my remove method and not the closing bracket for my class.
 
 Notice the transparent rectangles around my curly brackets. When they are both highlighted this indicates the opening and closing bracket of the bracket you clicked on, whether its opening or closing.
 
+![](2019-09-07-21-01-01.png)
+
 Hint: Click on the last bracket of your nested functions or objects, to see where the opening or closing brackets end for each bracket declaration. For nested brackets, I use Rainbow Brackets from VS code extensions for easy bracket distinctions through colors.
 
 Make sure there are no major linting errors, or else you will not be able to console.log
 
-Approach your where & what to console.log()
+##Approach your where & what to console.log()
 
 When it comes down to console.log it breaks down to:
 
@@ -62,11 +80,25 @@ Where - A lot of unit tests will give you hints if you read its final expected d
 
 In this case it was faster to read the test specs first and try to debug to find out where the problem in my code was. However it is always on a case by case basis, so it is better to always read the test specs with developer tools opened and approach your where and what to console.log.
 
+![](2019-09-07-21-04-08.png)
+
 It says expected “undefined” to equal “[ ]”. Clearly our getStack method is returning undefined instead of an empty array.
 
 I went back to my code and went to lines 30-32 of my getStack method and realized my I misspelled my this.store. I quickly fix it, without any needed console.log and get all my test specs to run.
 
-Read the developer settings error messages & test spec environment messages.
+```js
+getStack() {
+  return this.store
+}
+```
+
+##Read the developer settings error messages & test spec environment messages.
+
+```js
+// C - clean your code enviornment & make sure you are in the right test suite.
+// A - approach your where and what to console.log
+// R - read the test specs, and developer setttings error messages.
+```
 
 Picture A.
 

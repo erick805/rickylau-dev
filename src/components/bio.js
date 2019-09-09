@@ -64,37 +64,34 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
-        <Image
-          fixed={data.github.childImageSharp.fixed}
-          alt={author}
-          style={{
-            // display: flex,
-            minWidth: 15,
-            borderRadius: `100%`,
-          }}
-          imgStyle={{
-            borderRadius: `25%`,
-            // marginTop: 10,
-          }}
-        />
-        {"  "}{" "}
-        <a href={`https://github.com/rickylaufitness`}>rickylaufitness</a>{" "}
-        <Image
-          fixed={data.linkedin.childImageSharp.fixed}
-          alt={author}
-          style={{
-            minWidth: 15,
-            borderRadius: `100%`,
-            marginLeft: 15,
-          }}
-          imgStyle={{
-            borderRadius: `25%`,
-            // marginTop: 10,
-          }}
-        />{" "}
-        <a href={`https://www.linkedin.com/in/rickylaudev/`}>rickylaudev</a>
-      </p>
+      <Image
+        fixed={data.github.childImageSharp.fixed}
+        alt={author}
+        style={{
+          // display: flex,
+          minWidth: 15,
+          borderRadius: `100%`,
+        }}
+        imgStyle={{
+          borderRadius: `25%`,
+          // marginTop: 10,
+        }}
+      />
+      {"  "} <a href={`https://github.com/rickylaufitness`}>rickylaufitness</a>{" "}
+      <Image
+        fixed={data.linkedin.childImageSharp.fixed}
+        alt={author}
+        style={{
+          minWidth: 15,
+          borderRadius: `100%`,
+          marginLeft: 15,
+        }}
+        imgStyle={{
+          borderRadius: `25%`,
+          // marginTop: 10,
+        }}
+      />{" "}
+      <a href={`https://www.linkedin.com/in/rickylaudev/`}>rickylaudev</a>
     </div>
   )
 }

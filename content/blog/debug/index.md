@@ -164,3 +164,5 @@ I refactor my code to console.log pet’s name with a pet’s name string to ind
 Long behold, I got what I wanted and I realized I was not dotting my pet object to extract the name, instead I was just rendering the entire pet object for the key, which is not unique.
 
 I change the value of my key prop to pet.name instead of pet and I pass the test!
+
+In conclusion, there are a countless ways to debug in test driven development, but to have a nice foundation, that I hope you will CARD it when the comes.

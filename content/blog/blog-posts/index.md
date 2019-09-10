@@ -1,6 +1,6 @@
 ---
 title: Blog Posts
-# description: Full Stack Developer. Fitness Enthusiast. Problem Solver.
+description: " "
 ---
 
 ##[How to console.log() in test driven development](https://rickylau.dev/debug/)

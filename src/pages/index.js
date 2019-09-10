@@ -17,7 +17,6 @@ class BlogIndex extends React.Component {
         <SEO title="fullstack developer" />
         <Bio />
         {posts.map(({ node }) => {
-          console.log("NODE HERE:", node.frontmatter)
           const title = node.frontmatter.title || node.fields.slug
           return (
             <article key={node.fields.slug}>

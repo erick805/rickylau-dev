@@ -117,6 +117,7 @@ I went back to my code and went to lines 30-32 of my getStack method and realize
 
 ![](2019-09-07-21-19-26.png)
 Picture A.
+
 ![](2019-09-07-21-20-21.png)
 Picture B.
 
@@ -125,6 +126,7 @@ Sometimes your test spec messages and developer settings are useful in finding t
 From picture A. I notice my adoptionForm component is broken and specifically my option html jsx, key property is not rendering the key property with the pet’s name.
 
 ![](2019-09-07-21-21-43.png)
+
 I go to my adoptionForm component, and go to line 18 where my option tag is being rendered by react.
 
 What - what variables are we using in our one console.log, how many, any primitives to attach.

@@ -1,5 +1,5 @@
 ---
-title: How to console.log() in test driven development.
+title: Beginner Friendly Guide on how to debug in test driven development.
 description: " "
 ---
 

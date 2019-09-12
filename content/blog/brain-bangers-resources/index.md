@@ -1,5 +1,5 @@
 ---
-title: Brain-Bangers
+title: Brain-Bangers & Resources
 description: " "
 ---
 

@@ -3,6 +3,9 @@ title: How to console.log() in test driven development.
 description: " "
 ---
 
+![](2019-09-12-15-27-48.png)
+Did you card it?
+
 This guide is written to give you a blueprint to follow, so you know exactly where, and what to console.log(). We will go over two examples one with test specs written in jasmine and vanilla js & another written in mocha enzyme and jsx.
 
 I am also going to refer to the acronym -

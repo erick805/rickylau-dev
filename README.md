@@ -4,7 +4,7 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
 </p>
-<h1 align="center">
+<h1>
   My Portfolio & Blog built with Gatsby.
   Just your everyday learner and code monkey.
   

@@ -5,6 +5,8 @@ description: Full Stack Developer. Fitness Enthusiast. Problem Solver.
 
 Just your everyday learner and code monkey.
 
+![](profile-pic.jpg)
+
 ## My Journey to Code
 
 It all started Fall of 2017, I had just come back from a hiatus in China, and was

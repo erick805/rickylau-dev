@@ -5,9 +5,10 @@
   </a>
 </p>
 <h1 align="center">
-  My Portfolio & Blog built with Gatsby.\n
+  My Portfolio & Blog built with Gatsby.
   Full Stack Developer. Fitness Enthusiast. Problem Solver.
-  Just your everyday learner and code monkey.
+  
+## Just your everyday learner and code monkey.
 
 ## My Journey to Code
 

@@ -62,6 +62,7 @@ class Layout extends React.Component {
         }}
       >
         <header>{header}</header>
+        <h3>I'am a fullstack developer.</h3>
         <main>{children}</main>
 
         <footer>

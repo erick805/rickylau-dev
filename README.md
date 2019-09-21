@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1>
-  My Portfolio & Blog built with Gatsby.
+  My Portfolio & Blog built with Gatsby
 
 ## Full Stack Developer. Fitness Enthusiast. Problem Solver.
 

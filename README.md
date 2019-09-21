@@ -4,10 +4,11 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
 </p>
-<h1 align="center">
-  My Portfolio & Blog built with Gatsby
-  Full Stack Developer. Fitness Enthusiast. Problem Solver.
+<h1>
+  My Portfolio & Blog built with Gatsby.
   Just your everyday learner and code monkey.
+  
+## Full Stack Developer. Fitness Enthusiast. Problem Solver.
 
 ## My Journey to Code
 

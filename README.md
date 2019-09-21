@@ -6,8 +6,7 @@
 </p>
 <h1>
   My Portfolio & Blog built with Gatsby.
-  Just your everyday learner and code monkey.
-  
+
 ## Full Stack Developer. Fitness Enthusiast. Problem Solver.
 
 ## My Journey to Code

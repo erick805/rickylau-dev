@@ -5,6 +5,11 @@ description: " "
 
 ##Youtube
 [JavaScript: How It's Made](https://www.youtube.com/watch?v=FSs_JYwnAdI) by Fireship
+[The Coding Train](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) by The Coding Train
+[DesignCourse](https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow) by DesignCourse
+
+##Podcasts
+[Syntax.fm](https://syntax.fm/) by Syntax.fm
 
 ##uDemy
 [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/) by Andrei Neagoie

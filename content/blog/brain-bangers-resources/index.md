@@ -5,7 +5,9 @@ description: " "
 
 ##Youtube
 [JavaScript: How It's Made](https://www.youtube.com/watch?v=FSs_JYwnAdI) by Fireship
+
 [The Coding Train](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) by The Coding Train
+
 [DesignCourse](https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow) by DesignCourse
 
 ##Podcasts

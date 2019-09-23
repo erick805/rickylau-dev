@@ -9,10 +9,13 @@ This guide is written to give you a beginner friendly blueprint to follow, so yo
 
 So you can save steps and headaches when debugging in a JavaScript environment!
 
-We will go over two examples one with test specs written in Jasmine and vanilla JavaScript & another written in mocha enzyme and React JSX.
+We will go over two examples:
+
+Jasmine & vanilla JavaScript, Mocha Enzyme & React JSX.
 
 I am also going to refer to the acronym -
 
+```js
 // C - clean your code environment & make sure you are in the right test suite
 
 // A - approach your where and what to console.log
@@ -20,6 +23,7 @@ I am also going to refer to the acronym -
 // R - read your environment error messages & test specs
 
 // D - double check if you have an infinite loop and in the right scope
+```
 
 So next time when you approach a unit test, you will know. did I CARD it? or CRAD it?
 

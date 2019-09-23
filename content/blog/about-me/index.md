@@ -27,6 +27,6 @@ I enjoyed it very much so, and once finally finishing my degree in Kinesiology, 
 
 My first few months were self guided study with a couple of udemy courses and youtube videos and eventually I decided to invest into a bootcamp in Fall of 2018. I applied early 2019 and was immediately accepted into [Fullstack Academy of Code](https://www.fullstackacademy.com/).
 
-Where I graduated, and am currently working as a Teaching Fellow for the upcoming cohort of 1909 WDF.
+Where I graduated, and currently working as a Teaching Fellow for the upcoming cohort of 1909 WDF.
 
-I hope to combine my passions in tech, fitness, and business along with my daredevil mentality and grit rigor to bring use to the world!
+I hope to combine my passions in tech, fitness, and business along with my daredevil mentality to connect people all over the world socially, physically, and mentally through movement, community, gaming, education and experiences!

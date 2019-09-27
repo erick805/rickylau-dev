@@ -17,9 +17,15 @@ Interactive map of New York City featuring data visualizations of 2018 crime sta
 
 **Github**: [https://github.com/1904cs-charlie-owl/VisualNYC](https://github.com/1904cs-charlie-owl/VisualNYC)
 
+## Description
+
+---
+
 ![](./visualnyc.png)
 
 Map can be adjusted to display only crimes by: 1. time of day, 2. day of the week, 3. type of crime, etc.
+
+---
 
 Data is based off of NYC historical crime from beginning of 2018 until end of 2018.
 

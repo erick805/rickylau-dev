@@ -9,11 +9,11 @@ Vintage Vidya Games is an NES themed e-commerce web app complete with graphics a
 
 ![](vvg-bottom.png)
 
-Link: [https://vintage-vidya-games.herokuapp.com/](https://vintage-vidya-games.herokuapp.com/)
+**Link**: [https://vintage-vidya-games.herokuapp.com/](https://vintage-vidya-games.herokuapp.com/)
 
-Github: [https://github.com/fiesty-fish/vintageesportsllc](https://github.com/fiesty-fish/vintageesportsllc)
+**Github**: [https://github.com/fiesty-fish/vintageesportsllc](https://github.com/fiesty-fish/vintageesportsllc)
 
-Video Presentation: Coming soon..
+**Video Presentation**: Coming soon..
 
 ## Tech Stack
 

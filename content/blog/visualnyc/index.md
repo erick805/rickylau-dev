@@ -34,3 +34,10 @@ Travis
 Git
 GitHub
 Heroku
+
+## Dev Team
+
+- Ricky Lau ([LinkedIn](https://www.linkedin.com/in/rickylaudev) | [GitHub](https://github.com/rickylaufitness))
+- Michael Siciliano ([LinkedIn](https://www.linkedin.com/in/michael-siciliano-1904/) | [GitHub](https://github.com/msicil))
+- Justin Kichler ([LinkedIn](https://www.linkedin.com/in/justinkichler/) | [GitHub](https://github.com/jkichler))
+- Alexander Mann ([LinkedIn](https://www.linkedin.com/in/alexandermann2015/) | [GitHub](https://github.com/AlexanderMann2015))

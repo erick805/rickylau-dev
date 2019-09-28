@@ -25,11 +25,11 @@ Interactive map of New York City featuring data visualizations of 2018 crime sta
 
 ![](./visualnyc-init.png)
 
-VisualNYC grab's user's current day and time and automatically filters into a two hour window from your current time.
+_VisualNYC grab's user's current day and time and automatically filters into a two hour window from your current time._
 
 ---
 
-Highlighted borough buttons on top left allow for easy switch in borough view. Default view is Manhattan.
+**Filter**: Highlighted borough buttons on top left allow for easy switch in borough view. Default view is Manhattan.
 
 ![](./visualnyc.png)
 
@@ -39,19 +39,19 @@ Map can be adjusted to display only crimes by: **1**. time of day, **2**. day of
 
 ![](./visualnyc-search.png)
 
-Need to find a specific place, restaurant, or meet up spot? use search feature to to pinpoint your location in any borough in Greater NYC Area.
+**Search**: Need to find a specific place, restaurant, or meet up spot? use search feature to to pinpoint your location in any borough in Greater NYC Area.
 
 ---
 
 ![](visualnyc-zoomed.png)
 
-As you zoom in the heatmap will continue to render to show you crime density based on your location and crime filter settings.
+**Zoom**: As you zoom in the heatmap will continue to render to show you crime density based on your location and crime filter settings.
 
 ---
 
 ![](visualnyc-pinpoint.png)
 
-Once zoomed in enough, visualNYC will transform the user's view into a pin point map with color and radius indicators based on the type of crime and class of crime.
+**View**: Once zoomed in enough, visualNYC will transform the user's view into a pin point map with color and radius indicators based on the type of crime and class of crime.
 
 User can click on a pinpoint to see specific crime related details such as severity, location, date and time of crime occurence.
 
@@ -79,10 +79,10 @@ This project will help users decide if their security is at risk when moving to 
 
 _Example:_
 
-- Is it safe to walk in a neighborhood at 1am?
-- Do I want to move to this neighborhood?
-- Should I get an Uber or walk to the closest subway stop?
-- Is this neighborhood safe to let my kid's go trick or treating?
+1. Is it safe to walk in a neighborhood at 1am?
+2. Do I want to move to this neighborhood?
+3. Should I get an Uber or walk to the closest subway stop?
+4. Is this neighborhood safe to let my kid's go trick or treating?
 
 ## Tech Stack
 

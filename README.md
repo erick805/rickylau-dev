@@ -6,9 +6,9 @@
 </p>
 <h1 align="center">My Portfolio & Blog built with Gatsby</h1>
 
-## Full Stack Developer. Fitness Enthusiast. Problem Solver.
+<h2 align="center">Full Stack Developer. Fitness Enthusiast. Problem Solver.</h2>
 
-## My Journey to Code
+<h3 align="center">My Journey to Code</h3>
 
 It all started Fall of 2017, I had just come back from a hiatus in China, and was
 contemplating my life decisions. Having been in the fitness workforce for more
@@ -22,7 +22,7 @@ challenge. So I opened my first online e-commerce business two months in coming 
 
 It was a very small startup consisting of two people, and that was where I first got my hands into programming.
 
-Editing html and css within shopify's platform.
+Editing html and css within Shopify's e-commerce platform.
 
 I enjoyed it very much so, and once finally finishing my degree in Kinesiology, decided to venture into the world of code.
 
@@ -30,6 +30,4 @@ My first few months were self guided study with a couple of udemy courses and yo
 
 Where I graduated, and am currently working as a Teaching Fellow for the upcoming cohort of 1909 WDF.
 
-I hope to combine my passions in tech, fitness, and business along with my daredevil mentality and grit rigor to bring use to the world!
-
-</h1>
+Always eager and hungry to learn, I am inspired by AR/VR design & emerging tech and hope to bring people closer together through social value, physical and mental betterment, community, and experiences.

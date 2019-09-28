@@ -7,7 +7,9 @@ Interactive map of New York City featuring data visualizations of 2018 crime sta
 
 ---
 
-![](visualnyc-logo.png)
+<p align="center">
+<img src="visualnyc-logo.png"/>
+</p>
 
 ---
 
@@ -17,7 +19,7 @@ Interactive map of New York City featuring data visualizations of 2018 crime sta
 
 **Github**: [https://github.com/1904cs-charlie-owl/VisualNYC](https://github.com/1904cs-charlie-owl/VisualNYC)
 
-## Description
+<h2 align="center">Description</h2>
 
 ---
 
@@ -27,6 +29,8 @@ VisualNYC grab's user's current day and time and automatically filters into a tw
 
 ---
 
+Highlighted borough buttons on top left allow for easy switch in borough view. Default view is Manhattan.
+
 ![](./visualnyc.png)
 
 Map can be adjusted to display only crimes by: **1**. time of day, **2**. day of the week, **3**. class of crime, **4**. category of crime etc.
@@ -35,13 +39,13 @@ Map can be adjusted to display only crimes by: **1**. time of day, **2**. day of
 
 ![](./visualnyc-search.png)
 
-Use our search feature to to pinpoint your location in any borough in Greater NYC Area.
+Need to find a specific place, restaurant, or meet up spot? use search feature to to pinpoint your location in any borough in Greater NYC Area.
 
 ---
 
 ![](visualnyc-zoomed.png)
 
-As you zoom in heatmap will continue to render to show you crime density based on your location and crime filter settings.
+As you zoom in the heatmap will continue to render to show you crime density based on your location and crime filter settings.
 
 ---
 
@@ -51,16 +55,34 @@ Once zoomed in enough, visualNYC will transform the user's view into a pin point
 
 User can click on a pinpoint to see specific crime related details such as severity, location, date and time of crime occurence.
 
+**Play Feature**: By clicking the blue play button next to Time of Day, user can see an automatic progression of crime data over time in both heat map view and pinpoint view.
+
+---
+
+![](visualnyc-layer.png)
+
+_**Don't like a specfic layer or view?**_ Filter through your layers, and choose your best eye candy.
+
+---
+
+### Future Endeavors - 3D data visualization with custom csv, json, geojson files.
+
+![](./visualnyc-3dout.png)
+
+![](./visualnyc-3din.png)
+
 ---
 
 Data is based off of NYC historical crime from beginning of 2018 until end of 2018.
 
-This project will help users decide if their risk of crime when moving to or visiting a location and answer the age old question, is this area safe to be in? Example:
+This project will help users decide if their security is at risk when moving to or visiting a location and answer the age old question, is this area safe to be in?
 
-Is it safe to walk in a neighborhood at 1am?
-Do I want to move to this neighborhood?
-Should I get an Uber or walk to the closest subway stop?
-Is this neighborhood safe to let my kid's go trick or treating?
+_Example:_
+
+- Is it safe to walk in a neighborhood at 1am?
+- Do I want to move to this neighborhood?
+- Should I get an Uber or walk to the closest subway stop?
+- Is this neighborhood safe to let my kid's go trick or treating?
 
 ## Tech Stack
 

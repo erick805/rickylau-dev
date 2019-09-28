@@ -21,7 +21,7 @@ Interactive map of New York City featuring data visualizations of 2018 crime sta
 
 ---
 
-![](visualnyc-init.png)
+![](./visualnyc-init.png)
 
 VisualNYC grab's user's current day and time and automatically filters into a two hour window from your current time.
 
@@ -29,7 +29,27 @@ VisualNYC grab's user's current day and time and automatically filters into a tw
 
 ![](./visualnyc.png)
 
-Map can be adjusted to display only crimes by: 1. time of day, 2. day of the week, 3. type of crime, etc.
+Map can be adjusted to display only crimes by: **1**. time of day, **2**. day of the week, **3**. class of crime, **4**. category of crime etc.
+
+---
+
+![](./visualnyc-search.png)
+
+Use our search feature to to pinpoint your location in any borough in Greater NYC Area.
+
+---
+
+![](visualnyc-zoomed.png)
+
+As you zoom in heatmap will continue to render to show you crime density based on your location and crime filter settings.
+
+---
+
+![](visualnyc-pinpoint.png)
+
+Once zoomed in enough, visualNYC will transform the user's view into a pin point map with color and radius indicators based on the type of crime and class of crime.
+
+User can click on a pinpoint to see specific crime related details such as severity, location, date and time of crime occurence.
 
 ---
 

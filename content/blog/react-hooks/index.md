@@ -37,7 +37,35 @@ Class components come from ES6 classes and were the default method for managing 
 
 Here is a simple example of a counter with an increment button written in a class.
 
-CounterClass.gist
+```
+import React from 'react'
+
+class Counter extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      counter: 0
+    }
+    this.handleIncrement = this.handleIncrement.bind(this)
+  }
+
+  handleIncrement() {
+    this.setState({
+      counter: this.state.counter += 1
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <div>{this.state.counter}</div>
+        <hr />
+        <button type="button" onClick={this.handleIncrement}>+</button>
+     </div>
+    )
+  }
+}
+```
 
 As you can see, this requires you having to set up the constructor and a super, as well as additional wrappers such as the render() function. Not to mention, you have to bind the context of this in the constructor.
 
@@ -55,7 +83,25 @@ There are **two rules** of hooks:
 
 This is the same example but written without a class and with hooks.
 
-CounterHook.gist
+```
+import React, {useState} from 'react'
+
+function Counter() {
+  const [counter, incrementCounter] = useState(0)
+
+  function handleIncrement() {
+    incrementCounter(counter + 1)
+  }
+
+  return (
+    <div>
+      <div>{counter}</div>
+      <hr />
+      <button type="button" onClick={handleIncrement}>+</button>
+    </div>
+  )
+}
+```
 
 By importing and calling useState it declares a “state variable”. In this case, our variable is called count. useState only takes one argument and that is the initial state, the state does not have to be an object. useState returns a pair of values, the current state and a function that updates it. By destructuring our array into two variables, we can closely group the two values that uses the state and affects the state. Therefore our current state is the value of count and our incrementCounter is the function that updates count.
 
@@ -71,7 +117,43 @@ In the case of React, there are two common cases of side effects which include t
 
 **Class Example:**
 
-CounterClass2.gist
+```
+import React from 'react'
+
+class Counter extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+    	counter: 0
+    }
+    this.handleIncrement = this.handleIncrement.bind(this)
+  }
+
+  componentDidMount() {
+    document.title = this.state.counter;
+  }
+
+  componentDidUpdate() {
+    document.title = this.state.counter;
+  }
+
+  handleIncrement() {
+    this.setState({
+      counter: this.state.counter += 1
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <div>{this.state.counter}</div>
+        <hr />
+        <button type="button" onClick={this.handleIncrement}>+</button>
+     </div>
+    )
+  }
+}
+```
 
 This is an example of a side effect being introduced through React’s lifecycle methods found in
 Classes. E.g. componentDidMount, componentDidUpdate, componentWillUnMount.
@@ -84,26 +166,111 @@ For our 3 week capstone at Fullstack Academy of Code we utilized functional comp
 
 Here is an example with useEffect():
 
-CounterHook2.gist
+```
+import React, {useState} from 'react'
+
+function Counter() {
+  const [counter, incrementCounter] = useState(0)
+
+  useEffect(() => {
+    document.title = counter
+  })
+
+  function handleIncrement() {
+    incrementCounter(counter + 1)
+  }
+
+  return (
+    <div>
+      <div>{counter}</div>
+      <hr />
+      <button type="button" onClick={handleIncrement}>+</button>
+    </div>
+  )
+}
+```
 
 useEffect tells your component to do something after every render. React will remember the callback being passed in, and call it after the DOM updates. useEffect is placed inside our function component because we want to have access to our local state count. Additionally useEffect runs after every render, therefore it is like a componentDidMount, componentDidUpdate, and componentWillUnMount all in one.
 
 **Optimizing Performance by Skipping Effects**
 
 Cleaning up and applying the effect after every render is task heavy and we might right run into issues or bugs.
-In class components, we can combat this by adding an extra conditional into our componentDidUpdate function and passing in prevProps and prevState as parameters.
+
+In **class** components, we can combat this by adding an extra conditional into our componentDidUpdate function and passing in prevProps and prevState as parameters.
 
 If we wanted to limit our title to be a maximum count of 10.
 
-CounterClass3.gist
+```
+import React from 'react'
 
-In hooks, we can simply pass a second argument into useEffect() as an array with count in it and add the conditional inside our useEffect. Whatever is being passed into the array can be used to define all variables on which the hook depends. If one of the variables updates, the hook runs again.
+class Counter extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+    	counter: 0
+    }
+    this.handleIncrement = this.handleIncrement.bind(this)
+  }
+
+  componentDidMount() {
+    document.title = this.state.counter;
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.counter <= 10) {
+    document.title = this.state.counter;
+    }
+  }
+
+  handleIncrement() {
+    this.setState({
+      counter: this.state.counter += 1
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <div>{this.state.counter}</div>
+        <hr />
+        <button type="button" onClick={this.handleIncrement}>+</button>
+     </div>
+    )
+  }
+}
+```
+
+In **hooks**, we can simply pass a second argument into useEffect() as an array with count in it and add the conditional inside our useEffect. Whatever is being passed into the array can be used to define all variables on which the hook depends. If one of the variables updates, the hook runs again.
 
 **Important**: If you pass an empty array, the hook doesn’t run when updating the component at all because their is nothing to watch for. This is useful when you are fetching data in a loop, and only want to fetch it on componentDidMount(), therefore stopping the loop.
 
-CounterHook3.gist
+```
+import React, {useState} from 'react'
 
-_If you are interested in learning more about hooks like accessing context api …. - link to context api._
+function Counter() {
+  const [counter, incrementCounter] = useState(0)
+
+  useEffect(() => {
+    if (counter <= 10) {
+      document.title = counter
+    }
+  }, [counter])
+
+  function handleIncrement() {
+    incrementCounter(counter + 1)
+  }
+
+  return (
+    <div>
+      <div>{counter}</div>
+      <hr />
+      <button type="button" onClick={handleIncrement}>+</button>
+    </div>
+  )
+}
+```
+
+If you are interested in learning more about hooks like accessing context api, etc. - [link to context api](https://reactjs.org/docs/hooks-reference.html#usecontext)
 
 **In conclusion**, hooks solved many of the pain points that classes had:
 

@@ -7,35 +7,39 @@ description: " "
 
 Since React is so popular among modern developers today, this blog is intended to give you the pros and cons of react hooks vs classes.
 
-React is a JavaScript framework used to build user interfaces. One of the main benefits of React is its ability to maintain productivity and reusability in scale with its JSX syntax extension allowing for easier writing and processing of **components**.
+![](react-hooks.png)
+
+<p align="center">React is a JavaScript framework used to build user interfaces. One of the main benefits of React is its ability to maintain productivity and reusability in scale with its JSX syntax extension allowing for easier writing and processing of components.</p>
 
 In React, **components** are simply html elements written in JSX with added logic, conditions, functionality, and side effects returned in either a function or a class.
 
 With React, you can build single page applications also known as SPA with neat features like React Router.
 
-_Need to go mobile_? No problem - there’s React Native, without having to sacrifice the brain power of learning a completely new language or framework, you can jump straight into mobile development with a foundational knowledge of React.js.w
+_Need to go mobile_? No problem - there’s React Native, without having to sacrifice the brain power of learning a completely new language or framework, you can jump straight into mobile development with a foundational knowledge of React.js.
 
 _Having performance issues or slow render times_? React introduces the virtual DOM, where it compares new data with the original DOM and automatically updates the view.
 
 These are just some of the benefits that come with React along with it’s growing community and influx of libraries for issues such as global state management, styled components, testing, AR/VR and the list goes on.
 
-We will first go over what **hooks** and **classes** are in React, and how the release of hooks in React 16.8 solved the three pain points classes had:
+We will first go over what **hooks** and **classes** are in React, and how the release of hooks in **React 16.8** solved the three pain points classes had:
 
-- **reusing logic between multiple components** can lead to _wrapper hell_ or deeply nested components.
-- **unrelated mixed in logic** in life cycle methods can get repetitive, and cause unnecessary _side effects_.
-- lastly classes are simply **not optimal for compilers**
+**1**. **reusing logic between multiple components** can lead to _wrapper hell_ or deeply nested components.
 
-_Facebook uses a component folding library called Prepack, and they found that class components can encourage unintentional patterns that make optimizations fall back to a slower path._ - [Introducing Hooks section. by reactjs](https://reactjs.org/docs/hooks-intro.html)
+**2**. **unrelated mixed in logic** in life cycle methods can get repetitive, and cause unnecessary _side effects_.
 
-**The Problem**: React doesn’t provide a stateful primitive simpler than a class component - _Dan Abramov, React.js conf._
+**3**. lastly classes are simply **not optimal for compilers**.
+
+_Facebook uses a component folding library called Prepack, and they found that class components can encourage unintentional patterns that make optimizations fall back to a slower path._ - [Introducing Hooks section. - reactjs](https://reactjs.org/docs/hooks-intro.html)
+
+**THE PROBLEM**: React doesn’t provide a stateful primitive simpler than a class component - _Dan Abramov, React.js conf._
 
 ## Managing Local State:
 
-**What is a class in React?**
+<h4 align="center">What is a class in React?</h4>
 
 Class components come from ES6 classes and were the default method for managing local state, it also allowed for side effects to occur through lifecycle methods.
 
-Here is a simple example of a counter with an increment button written in a class.
+_Here is a simple example of a counter with an increment button written in a class._
 
 ```
 import React from 'react'
@@ -67,9 +71,11 @@ class Counter extends React.Component {
 }
 ```
 
-As you can see, this requires you having to set up the constructor and a super, as well as additional wrappers such as the render() function. Not to mention, you have to bind the context of this in the constructor.
+As you can see, this requires you having to set up the constructor and a super, as well as additional wrappers such as the `render()` function. Not to mention, you have to bind the context of _this_ in the `constructor()`.
 
-**What is a React Hook?**
+<h4 align="center">What is a React Hook?</h4>
+
+![](hooks.png)
 
 Hooks allow you to use local state and other React features without writing a class.
 
@@ -81,7 +87,7 @@ There are **two rules** of hooks:
 
 **Note:** Hooks are completely on an opt-in basis and 100% backwards-compatible. This means you don’t have to learn or use hooks right away and there will be no breaking changes when adding or refactoring your classes.
 
-This is the same example but written without a class and with hooks.
+This is the same example but written without a class and instead with hooks.
 
 ```
 import React, {useState} from 'react'
@@ -103,7 +109,13 @@ function Counter() {
 }
 ```
 
-By importing and calling useState it declares a “state variable”. In this case, our variable is called count. useState only takes one argument and that is the initial state, the state does not have to be an object. useState returns a pair of values, the current state and a function that updates it. By destructuring our array into two variables, we can closely group the two values that uses the state and affects the state. Therefore our current state is the value of count and our incrementCounter is the function that updates count.
+By importing and calling `useState()` it declares a “state variable”. In this case, our variable is called `count`.
+
+`useState()` only takes one argument and that is the initial state, the state does not have to be an object.
+
+`useState()` returns a pair of values, the current state and a function that updates it. By destructuring our array into two variables, we can closely group the two values that uses the state and affects the state.
+
+Therefore our current state is the value of `count` and our `incrementCounter` is the function that updates `count`.
 
 Notice how each variable correlates with its respective value, and functions stay DRY and reusable. There is no need for the context of this anymore and I saved some finger strength and time.
 
@@ -115,7 +127,7 @@ A side effect is generally anything that affects something outside the scope of 
 
 In the case of React, there are two common cases of side effects which include that those that don’t and those that do require cleanup. Examples of effects without cleanup are network requests, manual DOM mutations, and logging. This is because we run them and immediately forget about them.
 
-**Class Example:**
+**Class Example** w/ DOM mutations:
 
 ```
 import React from 'react'
@@ -156,15 +168,19 @@ class Counter extends React.Component {
 ```
 
 This is an example of a side effect being introduced through React’s lifecycle methods found in
-Classes. E.g. componentDidMount, componentDidUpdate, componentWillUnMount.
+Classes. E.g. `componentDidMount()`, `componentDidUpdate()`, `componentWillUnMount()`
 
-In this example, the componentDidMount “mounts” or sets up the title of the document to be the current count of the local state, the componentDidUpdate is invoked as soon as the updating happens, the most common use case for componentDidUpdate is updating the DOM in response to a prop or state change, if we wanted to reset the count, we would also need a componentWillUnMount().
+In this example, the `componentDidMount()` “mounts” or sets up the title of the document to be the current count of the local state.
+
+The componentDidUpdate is invoked as soon as the updating happens, the most common use case for componentDidUpdate is updating the DOM in response to a prop or state change.
+
+If we wanted to reset the count, we would also need a componentWillUnMount().
 
 **Hook Example:**
 
-For our 3 week capstone at Fullstack Academy of Code we utilized functional components with hooks using useEffect() to fetch NYC OPEN DATA and remote custom databases in arcGIS. Here is our [Github: VisualNYC](https://github.com/1904cs-charlie-owl/VisualNYC) and our [features](https://rickylau.dev/visualnyc/).
+During our 3 week capstone at Fullstack Academy of Code we utilized functional components with hooks using `useEffect()` to fetch NYC OPEN DATA and remote custom databases in arcGIS. Here is our [Github: VisualNYC](https://github.com/1904cs-charlie-owl/VisualNYC) and our [features](https://rickylau.dev/visualnyc/).
 
-Here is an example with useEffect():
+Here is an example with the `useEffect()` hook:
 
 ```
 import React, {useState} from 'react'
@@ -190,7 +206,13 @@ function Counter() {
 }
 ```
 
-useEffect tells your component to do something after every render. React will remember the callback being passed in, and call it after the DOM updates. useEffect is placed inside our function component because we want to have access to our local state count. Additionally useEffect runs after every render, therefore it is like a componentDidMount, componentDidUpdate, and componentWillUnMount all in one.
+`useEffect()` tells your component to do something after every render.
+
+React will remember the callback being passed in, and call it after the DOM updates.
+
+`useEffect()` is placed inside our function component because we want to have access to our local state count.
+
+Additionally `useEffect()` runs after every render, therefore it is like a `componentDidMount()`, `componentDidUpdate()`, and `componentWillUnMount()` all in one.
 
 **Optimizing Performance by Skipping Effects**
 

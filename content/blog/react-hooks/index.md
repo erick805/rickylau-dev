@@ -37,6 +37,15 @@ _Facebook uses a component folding library called Prepack, and they found that c
 
 ## Managing Local State:
 
+<h4 align="center">What is state in React?</h4>
+In simple terms, state is simply an object which contains all your key-value pairs which determines how your components render & behave.
+
+State allows your component to be dynamic and interactive.
+
+In order to access and manage state in a class you have to initialize `this.state` as an object within your `constructor()` and name your local state as a key and set its initial value as the key's value.
+
+Furthermore, it is recommended to call `setState()` every time you want to modify state correctly.
+
 <h4 align="center">What is a class in React?</h4>
 
 Class components come from ES6 classes and were the default method for managing local state, it also allowed for side effects to occur through lifecycle methods.
@@ -73,13 +82,21 @@ class Counter extends React.Component {
 }
 ```
 
-As you can see, this requires you having to set up the constructor and a super, as well as additional wrappers such as the `render()` function. Not to mention, you have to bind the context of _this_ in the `constructor()`.
+In order to set up a class component, you need a fair bit of boilerplate code which is not limited to your conventional constructor() within your class, and the super() for extending the component.
+
+The return needs to be wrapped in a render() function and it is necessary to add the context of this in object oriented programming.
+
+Not to mention, you have to bind the context of this in the constructor().
 
 <h4 align="center">What is a React Hook?</h4>
 
 ![](hooks.png)
 
-<p align="center">Hooks allow you to use local state and other React features without writing a class.</p>
+<p align="center">Hooks allow you to use local state and other React features without writing a class.
+
+A Hook is a special function that lets you "hook onto" React features.
+
+For example, `useState()` is a hook that lets you add React state to function components.</p>
 
 There are **two rules** of hooks:
 
@@ -111,13 +128,17 @@ function Counter() {
 }
 ```
 
-By importing and calling `useState()` it declares a “state variable”. In this case, our variable is called `count`.
+By importing and calling useState() it declares a "state variable" counter with a value of whatever argument is being passed into useState() . In this case, our state variable counter has a value of zero.
 
 `useState()` only takes one argument and that is the initial state, the state does not have to be an object.
+
+**Note**: **_`useState()`'s argument is not limited to an object, it can be a primitive e.g. numbers, strings, boolean, etc._**
 
 `useState()` returns a pair of values, the current state and a function that updates it.
 
 By destructuring our array into two variables, we can use a more declarative approach by closely grouping the two values whom which uses the state and affects the state.
+
+This is a concept called coupling in programming and by closely grouping the two values we know they are closely dependent on one another.
 
 Therefore our current state is the value of `count` and our `incrementCounter` is the function that updates `count`.
 

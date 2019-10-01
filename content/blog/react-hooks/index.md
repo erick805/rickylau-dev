@@ -142,7 +142,9 @@ This is a concept called coupling in programming and by closely grouping the two
 
 Therefore our current state is the value of `count` and our `incrementCounter` is the function that updates `count`.
 
-Notice how each variable correlates with its respective value, and functions stay DRY and reusable. There is no need for the context of this anymore and I saved some finger strength and time.
+Notice how each variable correlates with its respective value, and functions stay **DRY** and **reusable**.
+
+There is no need for the context of `this` anymore and I saved some finger strength and time.
 
 ## Introducing Side Effects:
 
@@ -154,11 +156,11 @@ A side effect is generally anything that affects something outside the scope of 
 
 Common side effects include data fetching, setting up subscriptions, and manually changing the DOM in React components.
 
-In the case of React, there are two common cases of side effects which include that those that don’t and those that do require cleanup.
+In the case of React, there are two common cases of side effects which include those that don’t and those that do require cleanup.
 
 Examples of effects without cleanup are network requests, manual DOM mutations, and logging. This is because we run them and immediately forget about them.
 
-**Class Example** w/ DOM mutations:
+**Class Example** w/ DOM mutation:
 
 ```
 import React from 'react'
@@ -207,11 +209,9 @@ The `componentDidUpdate()` is invoked as soon as the updating happens, the most 
 
 If we wanted to reset the count, we would also need a componentWillUnMount().
 
-**Hooks Example:**
+Here is a better read on life cycle methods - [React Lifecycle Methods - A Deep Dive by Mosh Hamedani](https://programmingwithmosh.com/javascript/react-lifecycle-methods/) if you are interested in learning more about life cycle methods.
 
-_During our 3 week capstone at Fullstack Academy of Code we utilized functional components with hooks using `useEffect()` to fetch NYC OPEN DATA and remote custom databases in arcGIS. Here is our [Github: VisualNYC](https://github.com/1904cs-charlie-owl/VisualNYC) and our [features](https://rickylau.dev/visualnyc/)._
-
-_Here is an example with the **`useEffect()`** hook:_
+**Function Example** with the **`useEffect()`** hook:
 
 ```
 import React, {useState} from 'react'
@@ -241,19 +241,23 @@ function Counter() {
 
 React will remember the callback being passed in, and call it after the DOM updates.
 
-`useEffect()` is placed inside our function component because we want to have access to our local state count.
+`useEffect()` **_is placed inside our function component because we want to have access to our local state count._**
 
 Additionally `useEffect()` runs after every render, therefore it is like a `componentDidMount()`, `componentDidUpdate()`, and `componentWillUnMount()` all in one.
 
+_During our 3 week capstone at Fullstack Academy of Code we utilized functional components with hooks using `useEffect()` to fetch NYC OPEN DATA and remote custom databases in arcGIS._
+
+_Here is our [Github: VisualNYC](https://github.com/1904cs-charlie-owl/VisualNYC) and our [features](https://rickylau.dev/visualnyc/)_, if you are interested.
+
 **Optimizing Performance by Skipping Effects**
+
+**Class Example**:
 
 Cleaning up and applying the effect after every render is task heavy and we might right run into issues or bugs.
 
-In **class** components, we can combat this by adding an extra conditional into our componentDidUpdate function and passing in prevProps and prevState as parameters.
+In **class** components, we can combat this by adding an extra conditional into our componentDidUpdate function and passing in **`prevProps`** and **`prevState`** as parameters.
 
-If for instance, we wanted to limit our title to be a maximum count of 10.
-
-**Class Example**:
+_If for instance, we wanted to limit our title to be a maximum count of 10:_
 
 ```
 import React from 'react'
@@ -295,11 +299,13 @@ class Counter extends React.Component {
 }
 ```
 
-In **hooks**, we can simply pass a second argument into `useEffect()` as an array with count in it and add the conditional inside our `useEffect()`. Whatever is being passed into the array can be used to define all variables on which the hook depends. If one of the variables updates, the hook runs again.
-
-**Important**: If you pass an empty array, the hook doesn’t run when updating the component at all because their is nothing to watch for. This is useful when you are fetching data in a loop, and you only want to fetch it on `componentDidMount()`, therefore stopping the loop.
-
 **Hooks Example:**
+
+In **hooks**, we can simply pass a second argument into `useEffect()` as an array with count in it and add the conditional inside our `useEffect()`.
+
+**_Whatever is being passed into the array can be used to define all variables on which the hook depends. If one of the variables updates, the hook runs again._**
+
+**Important**: If you pass an empty array, the hook doesn’t run when updating the component at all because there is nothing to watch for. This is useful when you are fetching data in a loop, and you only want to fetch it on `componentDidMount()`, therefore stopping the loop.
 
 ```
 import React, {useState} from 'react'
@@ -331,26 +337,24 @@ If you are interested in learning more about hooks like accessing context api, e
 
 **In conclusion**, hooks solved many of the pain points that classes had:
 
-**1**. difficulty in reusing logic between multiple components
+**1**. **difficulty** in **reusing logic** between **multiple components**
 
-**2**. giant components - too many lifecycle methods, and unrelated & repetitive code
+**2**. **giant components** - too many lifecycle methods, and unrelated & repetitive code
 
-**3**. Not human and machine friendly in some cases
+**3**. **Not human** and **machine friendly** in some cases
 
 ![](functional.png)
 
-_[So You Want to be a Functional Programmer - Charles Scalfani](https://medium.com/@cscalfani/so-you-want-to-be-a-functional-programmer-part-1-1f15e387e536)_
+_[So You Want to be a Functional Programmer - Charles Scalfani](https://medium.com/@cscalfani/so-you-want-to-be-a-functional-programmer-part-1-1f15e387e536)_ _is a great read about what is functional programming, and how to get into the mindset of functional programming._
 
-Hooks also adapts the benefits of functional reusability to React.
+But in the end, there are still many use cases for classes and they are still loved and adored by many in React for a-lot of reasons.
 
-But in the end, there are still many use cases for classes and they are still loved and adored by many in React for alot of reasons.
+_For example, if you wanted to break down your side effects into specific life cycle methods_
 
-_For example, if you wanted to break down your side effects into specific life cycle methods or if you needed a small piece component level state._
+Again this blog guide was **not meant** to sway you into using hooks or completely refactoring your classes to hooks.
 
-This blog guide was **not meant** to sway you into using hooks or completely refactoring your classes to hooks.
+In fact, I would stay away from big application refactoring, and if hooks really do interest you, try to apply the concepts to new projects you will be working on instead.
 
-I would stay away from big application refactoring, and if hooks really do interest you, try to apply the concepts to new projects you will be working on instead.
-
-This has been my personal preference & experience with hooks and classes in React, and I hope you left a little bit wittier about React.
+This has been my personal preference & experience with hooks and classes in React, and I hope you left a little bit wittier about React after reading this blog.
 
 Until next time. **Happy Coding!** - _RL_

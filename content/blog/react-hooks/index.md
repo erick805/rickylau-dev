@@ -213,6 +213,8 @@ If we wanted to reset the count, we would also need a componentWillUnMount().
 
 _Here is a better read on lifecycle methods - [React Lifecycle Methods - A Deep Dive by Mosh Hamedani](https://programmingwithmosh.com/javascript/react-lifecycle-methods/) if you are interested in learning more about lifecycle methods._
 
+**Side effects using React hooks**
+
 **Function Example** with the **`useEffect()`** hook:
 
 ```
@@ -251,13 +253,13 @@ _During our 3 week capstone at Fullstack Academy of Code we utilized functional 
 
 _Here is our [Github: VisualNYC](https://github.com/1904cs-charlie-owl/VisualNYC) and our [features](https://rickylau.dev/visualnyc/)_, if you are interested.
 
-**Optimizing Performance by Skipping Effects**
+## Optimizing Performance by Skipping Effects
 
 **Class Example**:
 
 Cleaning up and applying the effect after every render is task heavy and we might right run into issues or bugs.
 
-In **class** components, we can combat this by adding an extra conditional into our componentDidUpdate function and passing in **`prevProps`** and **`prevState`** as parameters.
+In **class** components, we can combat this by adding an extra conditional into our `componentDidUpdate` function and passing in **`prevProps`** and **`prevState`** as parameters.
 
 _If for instance, we wanted to limit our title to be a maximum count of 10:_
 
@@ -303,11 +305,11 @@ class Counter extends React.Component {
 
 **Hooks Example:**
 
-In **hooks**, we can simply pass a second argument into `useEffect()` as an array with count in it and add the conditional inside our `useEffect()`.
+With **hooks**, we can simply pass a second argument into `useEffect()` as an array with count in it and add the conditional inside our `useEffect()`.
 
 **_Whatever is being passed into the array can be used to define all variables on which the hook depends. If one of the variables updates, the hook runs again._**
 
-**Important**: If you pass an empty array, the hook doesn’t run when updating the component at all because there is nothing to watch for. This is useful when you are fetching data in a loop, and you only want to fetch it on `componentDidMount()`, therefore stopping the loop.
+Keep in mind, if you pass an empty array, the hook doesn't run when updating the component at all because there is nothing to watch for. This is useful when you are fetching data in a loop, and you only want to fetch it on `componentDidMount()`, therefore stopping the loop.
 
 ```
 import React, {useState} from 'react'
@@ -335,28 +337,14 @@ function Counter() {
 }
 ```
 
+_We would pass [counter] into the second argunent of useEffect()._
+
 If you are interested in learning more about hooks like accessing context api, etc. - [link to context api](https://reactjs.org/docs/hooks-reference.html#usecontext)
 
-**In conclusion**, hooks solved many of the pain points that classes had:
+While, hooks solved many of the pain points that we experienced using classes in React, there are still other use cases for classes.
 
-**1**. **difficulty** in **reusing logic** between **multiple components**
+Again this guide was **not meant** to convince you to use hooks or completely refactor your classes to hooks.
 
-**2**. **giant components** - too many lifecycle methods, and unrelated & repetitive code
+If you are really interested in learning more about hooks, try to apply the concepts to new projects you initiate in the future instead.
 
-**3**. **Not human** and **machine friendly** in some cases
-
-![](functional.png)
-
-_[So You Want to be a Functional Programmer - Charles Scalfani](https://medium.com/@cscalfani/so-you-want-to-be-a-functional-programmer-part-1-1f15e387e536)_ _is a great read about what is functional programming, and how to get into the mindset of functional programming._
-
-But in the end, there are still many use cases for classes and they are still loved and adored by many in React for a-lot of reasons.
-
-_For example, if you wanted to break down your side effects into specific lifecycle methods_
-
-Again this blog guide was **not meant** to sway you into using hooks or completely refactoring your classes to hooks.
-
-In fact, I would stay away from big application refactoring, and if hooks really do interest you, try to apply the concepts to new projects you will be working on instead.
-
-This has been my personal preference & experience with hooks and classes in React, and I hope you left a little bit wittier about React after reading this blog.
-
-Until next time. **Happy Coding!** - _RL_
+Until next time. **Happy Coding!** - *RL*

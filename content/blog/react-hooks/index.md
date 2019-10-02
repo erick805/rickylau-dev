@@ -11,15 +11,13 @@ Since React is so popular among modern developers today, this blog is intended t
 
 First we we will discuss state, then we will go over what **hooks** and **classes** are in React. Finally, we'll see how the release of hooks in **React 16.8** solved the following pain points:
 
-**1**. **reusing logic between multiple components** can lead to _wrapper hell_ or deeply nested components.
+**1**. **Managing State**: **Reusing logic between multiple components** can lead to _wrapper hell_ or deeply nested components.
 
 ![](./wrapper-hell.png)
 
-**2**. **unrelated mixed in logic** in lifecycle methods can get repetitive, and cause unnecessary _side effects_.
+**2**. **Side Effects**: **Unrelated mixed in logic** in lifecycle methods can get repetitive, and cause unnecessary _side effects_.
 
-**3**. lastly classes are simply **not optimal for compilers**.
-
-_Facebook uses a component folding library called Prepack, and they found that class components can encourage unintentional patterns that make optimizations fall back to a slower path._ - [Introducing Hooks section. - reactjs](https://reactjs.org/docs/hooks-intro.html)
+**3**. **Optimization**: Classes are simply **not optimal for compilers**.
 
 ## Managing Local State:
 

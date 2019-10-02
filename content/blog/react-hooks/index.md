@@ -82,25 +82,31 @@ In this case, the value of `this` falls back to default binding and points to th
 
 Finally, we need to wrap our return statement in the `render()` function.
 
-<h4 align="center">What is a React Hook?</h4>
+<h4 align="center">How React hooks manage local state</h4>
 
 ![](hooks.png)
 
-<p align="center">Hooks allow you to use local state and other React features without writing a class.
-
-A Hook is a special function that lets you "hook onto" React features.
-
-For example, `useState()` is a hook that lets you add React state to function components.</p>
-
-There are **two rules** of hooks:
-
-**1.** _Only call hooks at the top level, do not nest your hooks in any logic._
-
-**2.** _Only call Hooks from React functions or custom hooks._
-
 **Note:** Hooks are completely on an opt-in basis and 100% backwards-compatible. This means you don’t have to learn or use hooks right away and there will be no breaking changes when adding or refactoring your classes.
 
-This is the same example but written without a class and instead with hooks.
+Hooks allow you to use local state and other React features without writing a class.
+
+Hooks are special functions that lets you "hook onto" React state and lifecycle features inside function components.
+
+**Important: React internally can't keep track of hooks that run out of order. Since hooks return an array, the order that they get called matters.**
+
+There are **two rules** for hooks:
+
+**1.** **_Only call hooks at the top level, do not nest your hooks in any logic._**
+
+`// DO NOT DO THIS! if (bool) { const [counter, incrementCounter] = useState(0) }`
+
+**2.** _Only call hooks from React functions or custom hooks._
+
+Since React components are re-rendered each time data changes, this means the **exact same hooks** must be called in the **exact same order** on every single render. If we wrapped it in a conditional or function, the state would sometimes be created and sometimes wouldn't be.
+
+For example, **`useState()`** is a hook that lets you add React state to function components.
+
+_This is the same example but written without a class and instead with hooks:_
 
 ```
 import React, {useState} from 'react'
@@ -122,29 +128,29 @@ function Counter() {
 }
 ```
 
-By importing and calling useState() it declares a "state variable" counter with a value of whatever argument is being passed into useState() . In this case, our state variable counter has a value of zero.
+By importing and calling `useState()` it declares a "state variable" `counter` with a value of whatever argument is being passed into `useState()`. In this case, our state variable `counter` has a value of zero.
 
-`useState()` only takes one argument and that is the initial state, the state does not have to be an object.
+`useState()` only takes one argument, the initial state.
 
 **Note**: **_`useState()`'s argument is not limited to an object, it can be a primitive e.g. numbers, strings, boolean, etc._**
 
 `useState()` returns a pair of values, the current state and a function that updates it.
 
-By destructuring our array into two variables, we can use a more declarative approach by closely grouping the two values whom which uses the state and affects the state.
+_By destructuring our array into two variables, we can use a more declarative approach, since we know the first value returned in the array is the current state, and the second value is the function that updates the state._
 
-This is a concept called coupling in programming and by closely grouping the two values we know they are closely dependent on one another.
+This is a concept called [coupling](<https://en.wikipedia.org/wiki/Coupling_(computer_programming)>) in programming and by closely grouping the two values we know they are closely dependent on one another.
 
 Therefore our current state is the value of `count` and our `incrementCounter` is the function that updates `count`.
 
-Notice how each variable correlates with its respective value, and functions stay **DRY** and **reusable**.
+**Note**: `incrementCounter()` needs to be wrapped in a function and passed as a prop into our button.
 
-There is no need for the context of `this` anymore and I saved some finger strength and time.
+Notice how each variable correlates with its respective value, and our functions stay **DRY** and **reusable**.
 
-## Introducing Side Effects:
+In addition, there is no need for the `this` context saving us some finger strength and time.
+
+## What is a side effect?
 
 ![](side-effects.png)
-
-<h4 align="center">What is a side effect?</h4>
 
 A side effect is generally anything that affects something outside the scope of the function being executed, or in the context of React - anything that modifies some state outside of its local environment.
 
@@ -153,6 +159,8 @@ Common side effects include data fetching, setting up subscriptions, and manuall
 In the case of React, there are two common cases of side effects which include those that don’t and those that do require cleanup.
 
 Examples of effects without cleanup are network requests, manual DOM mutations, and logging. This is because we run them and immediately forget about them.
+
+**Side effects using classes im React**
 
 **Class Example** w/ DOM mutation:
 
@@ -203,7 +211,7 @@ The `componentDidUpdate()` is invoked as soon as the updating happens, the most 
 
 If we wanted to reset the count, we would also need a componentWillUnMount().
 
-Here is a better read on lifecycle methods - [React Lifecycle Methods - A Deep Dive by Mosh Hamedani](https://programmingwithmosh.com/javascript/react-lifecycle-methods/) if you are interested in learning more about lifecycle methods.
+_Here is a better read on lifecycle methods - [React Lifecycle Methods - A Deep Dive by Mosh Hamedani](https://programmingwithmosh.com/javascript/react-lifecycle-methods/) if you are interested in learning more about lifecycle methods._
 
 **Function Example** with the **`useEffect()`** hook:
 

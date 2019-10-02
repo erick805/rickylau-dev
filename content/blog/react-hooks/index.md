@@ -19,20 +19,20 @@ First we we will discuss state, then we will go over what **hooks** and **classe
 
 **3**. **Optimization**: Classes are simply **not optimal for compilers**.
 
-## Managing Local State:
+## Managing Local State
 
 <h4 align="center">What is state in React?</h4>
 In simple terms, state is simply an object which contains all your key-value pairs which determines how your components render & behave.
 
 State allows your component to be dynamic and interactive.
 
-In order to access and manage state in a class you have to initialize `this.state` as an object within your `constructor()` and name your local state as a key and set its initial value as the key's value.
+In order to access and manage state in a class you have to initialize `this.state` as an object within your `constructor()`, name your local state as a key, and set its initial value as the key's value.
 
 Furthermore, it is recommended to call `setState()` every time you want to modify state correctly.
 
-<h4 align="center">What is a class in React?</h4>
+<h4 align="center">How classes manage local state in React</h4>
 
-Class components come from ES6 classes and were the default method for managing local state, it also allowed for side effects to occur through lifecycle methods.
+Class components come from ES6 classes and is the default method for managing local state. It also allows for side effects to occur through lifecycle methods.
 
 _Here is a simple example of a counter with an increment button written in a class._
 
@@ -68,9 +68,19 @@ class Counter extends React.Component {
 
 In order to set up a class component, you need a fair bit of boilerplate code which is not limited to your conventional `constructor()` within your class, and the `super()` for extending the component.
 
-The return needs to be wrapped in a `render()` lifecycle function and it is necessary to add the context of this in object oriented programming.
+For instance, it is necessary to add the `this` context in class components.
 
-Not to mention, you have to bind the context of this in the `constructor()`.
+We would need to bind the concept of `this` because of **implicit binding** in vanilla JavaScript.
+
+_When we pass the event handler function reference as a callback like this:_
+
+`<button type="button" onClick={this.handleIncrement}>+</button>`
+
+We lose the context of `this` because `handleIncrement()` becomes just a regular function call without an owner object.
+
+In this case, the value of `this` falls back to default binding and points to the global object or undefined if the function being invoked is using strict mode.
+
+Finally, we need to wrap our return statement in the `render()` function.
 
 <h4 align="center">What is a React Hook?</h4>
 

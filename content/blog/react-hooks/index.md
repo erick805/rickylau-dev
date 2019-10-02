@@ -5,35 +5,21 @@ description: " "
 
 Since React is so popular among modern developers today, this blog is intended to give you the pros and cons of react hooks vs classes through React 16.8's release of **`useState()`** and **`useEffect()`**'s hooks api.
 
-<h3 align="center">How does React work?</h3>
-
 ![](react-hooks.png)
 
-<p align="center">React is a JavaScript framework used to build user interfaces. One of the main benefits of React is its ability to maintain productivity and reusability in scale with its JSX syntax extension allowing for easier writing and processing of components.</p>
+**THE PROBLEM**: React doesn’t provide a stateful primitive simpler than a class component - _Dan Abramov, React.js conf._
 
-In React, **components** are simply html elements written in JSX with added logic, conditions, functionality, and side effects returned in either a function or a class.
-
-With React, you can build **_single page applications_** also known as SPA with neat features like React Router.
-
-**_Need to go mobile?_** No problem - there’s React Native, without having to sacrifice the brain power of learning a completely new language or framework, you can jump straight into mobile development with a foundational knowledge of React.js.
-
-**_Having performance issues or slow render times?_** React introduces the virtual DOM, where it compares new data with the original DOM and automatically updates the view.
-
-These are just some of the benefits that come with React, along with its growing community and influx of libraries for issues such as **global state management**, **styled components**, **testing**, **AR/VR**, **_service workers_** and the list goes on.
-
-We will first go over what **hooks** and **classes** are in React, and how the release of hooks in **React 16.8** solved the three pain points classes had:
+First we we will discuss state, then we will go over what **hooks** and **classes** are in React. Finally, we'll see how the release of hooks in **React 16.8** solved the following pain points:
 
 **1**. **reusing logic between multiple components** can lead to _wrapper hell_ or deeply nested components.
 
 ![](./wrapper-hell.png)
 
-**2**. **unrelated mixed in logic** in life cycle methods can get repetitive, and cause unnecessary _side effects_.
+**2**. **unrelated mixed in logic** in lifecycle methods can get repetitive, and cause unnecessary _side effects_.
 
 **3**. lastly classes are simply **not optimal for compilers**.
 
 _Facebook uses a component folding library called Prepack, and they found that class components can encourage unintentional patterns that make optimizations fall back to a slower path._ - [Introducing Hooks section. - reactjs](https://reactjs.org/docs/hooks-intro.html)
-
-**THE PROBLEM**: React doesn’t provide a stateful primitive simpler than a class component - _Dan Abramov, React.js conf._
 
 ## Managing Local State:
 
@@ -82,11 +68,11 @@ class Counter extends React.Component {
 }
 ```
 
-In order to set up a class component, you need a fair bit of boilerplate code which is not limited to your conventional constructor() within your class, and the super() for extending the component.
+In order to set up a class component, you need a fair bit of boilerplate code which is not limited to your conventional `constructor()` within your class, and the `super()` for extending the component.
 
-The return needs to be wrapped in a render() function and it is necessary to add the context of this in object oriented programming.
+The return needs to be wrapped in a `render()` lifecycle function and it is necessary to add the context of this in object oriented programming.
 
-Not to mention, you have to bind the context of this in the constructor().
+Not to mention, you have to bind the context of this in the `constructor()`.
 
 <h4 align="center">What is a React Hook?</h4>
 
@@ -209,7 +195,7 @@ The `componentDidUpdate()` is invoked as soon as the updating happens, the most 
 
 If we wanted to reset the count, we would also need a componentWillUnMount().
 
-Here is a better read on life cycle methods - [React Lifecycle Methods - A Deep Dive by Mosh Hamedani](https://programmingwithmosh.com/javascript/react-lifecycle-methods/) if you are interested in learning more about life cycle methods.
+Here is a better read on lifecycle methods - [React Lifecycle Methods - A Deep Dive by Mosh Hamedani](https://programmingwithmosh.com/javascript/react-lifecycle-methods/) if you are interested in learning more about lifecycle methods.
 
 **Function Example** with the **`useEffect()`** hook:
 
@@ -349,7 +335,7 @@ _[So You Want to be a Functional Programmer - Charles Scalfani](https://medium.c
 
 But in the end, there are still many use cases for classes and they are still loved and adored by many in React for a-lot of reasons.
 
-_For example, if you wanted to break down your side effects into specific life cycle methods_
+_For example, if you wanted to break down your side effects into specific lifecycle methods_
 
 Again this blog guide was **not meant** to sway you into using hooks or completely refactoring your classes to hooks.
 

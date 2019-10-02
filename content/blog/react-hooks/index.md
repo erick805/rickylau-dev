@@ -28,7 +28,7 @@ State allows your component to be dynamic and interactive.
 
 In order to access and manage state in a class you have to initialize `this.state` as an object within your `constructor()`, name your local state as a key, and set its initial value as the key's value.
 
-Furthermore, it is recommended to call `setState()` every time you want to modify state correctly.
+Furthermore, it is recommended to call `setState()` every time you want to modify state correctly pre hooks.
 
 <h4 align="center">How classes manage local state in React</h4>
 
@@ -80,7 +80,7 @@ We lose the context of `this` because `handleIncrement()` becomes just a regular
 
 In this case, the value of `this` falls back to default binding and points to the global object or undefined if the function being invoked is using strict mode.
 
-Finally, we need to wrap our return statement in the `render()` function.
+Finally, we need to wrap our return statement inside the `render()` function.
 
 <h4 align="center">How React hooks manage local state</h4>
 
@@ -104,7 +104,7 @@ There are **two rules** for hooks:
 
 Since React components are re-rendered each time data changes, this means the **exact same hooks** must be called in the **exact same order** on every single render. If we wrapped it in a conditional or function, the state would sometimes be created and sometimes wouldn't be.
 
-For example, **`useState()`** is a hook that lets you add React state to function components.
+**`useState()`** is a hook that lets you add React state to function components.
 
 _This is the same example but written without a class and instead with hooks:_
 
@@ -138,9 +138,9 @@ By importing and calling `useState()` it declares a "state variable" `counter` w
 
 _By destructuring our array into two variables, we can use a more declarative approach, since we know the first value returned in the array is the current state, and the second value is the function that updates the state._
 
-This is a concept called [coupling](<https://en.wikipedia.org/wiki/Coupling_(computer_programming)>) in programming and by closely grouping the two values we know they are closely dependent on one another.
+This is a concept called [coupling](<https://en.wikipedia.org/wiki/Coupling_(computer_programming)>) in programming and by closely grouping the two values we know they are closely dependent to one another.
 
-Therefore our current state is the value of `count` and our `incrementCounter` is the function that updates `count`.
+Therefore our current state is the value of `count` which is zero, and our `incrementCounter` is the function which updates `count`.
 
 **Note**: `incrementCounter()` needs to be wrapped in a function and passed as a prop into our button.
 
@@ -159,6 +159,8 @@ Common side effects include data fetching, setting up subscriptions, and manuall
 In the case of React, there are two common cases of side effects which include those that don’t and those that do require cleanup.
 
 Examples of effects without cleanup are network requests, manual DOM mutations, and logging. This is because we run them and immediately forget about them.
+
+If we wanted to cleanup after our side effects we would need to return a function with the unmount logic inside.
 
 **Side effects using classes im React**
 
@@ -261,7 +263,7 @@ Cleaning up and applying the effect after every render is task heavy and we migh
 
 In **class** components, we can combat this by adding an extra conditional into our `componentDidUpdate` function and passing in **`prevProps`** and **`prevState`** as parameters.
 
-_If for instance, we wanted to limit our title to be a maximum count of 10:_
+_If for instance, we wanted to limit our `document.title` to be a maximum count of 10:_
 
 ```
 import React from 'react'
@@ -344,6 +346,8 @@ If you are interested in learning more about hooks like accessing context api, e
 While, hooks solved many of the pain points that we experienced using classes in React, there are still other use cases for classes.
 
 Again this guide was **not meant** to convince you to use hooks or completely refactor your classes to hooks.
+
+Just a friendly reminder that there are other options out there. Experiment!
 
 If you are really interested in learning more about hooks, try to apply the concepts to new projects you initiate in the future instead.
 

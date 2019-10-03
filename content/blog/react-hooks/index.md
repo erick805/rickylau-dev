@@ -22,9 +22,12 @@ First we will briefly discuss state, then we will go over what **hooks** and **c
 ## Managing Local State
 
 <h4 align="center">What is state in React?</h4>
+
 In simple terms, state is simply an object which contains all your key-value pairs, state determines how your components render & behave.
 
-_State allows your component to be dynamic and interactive._
+State allows your component to be dynamic and interactive.
+
+_State not to be confused with props is what is managed within the component, where as props is what gets passed to the component._
 
 <h4 align="center">How classes manage local state in React</h4>
 
@@ -343,7 +346,7 @@ _We would pass [counter] into the second argunent of useEffect()._
 
 If you are interested in learning more about hooks like accessing context api, etc. - [link to context api](https://reactjs.org/docs/hooks-reference.html#usecontext)
 
-In conclusion, while hooks solved many of the pain points that we experienced using classes in React, there are still other use cases for classes.
+In conclusion, while hooks solved many of the pain points that we experienced using classes in React, there are still other use cases for classes. For example, if you wanted to access specifc lifecycle methods.
 
 Again this guide was **not meant** to convince you to use hooks or completely refactor your classes to hooks.
 

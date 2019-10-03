@@ -87,7 +87,7 @@ _Notice the transparent rectangles around our curly brackets. When they are both
 
 Hint: _Click on the last bracket of your nested functions or objects, to see where the opening or closing brackets end for each bracket declaration. For nested brackets, I use Rainbow Brackets from VS code extensions for easy bracket distinctions through colors._
 
-##A - Approach your where & what to `console.log()`
+##A - Approach your where & what to console.log()
 
 **Where** - in what line of code and where in the line
 
@@ -143,7 +143,7 @@ Sometimes your unit test messages and developer settings are useful in finding t
 
 _For example in this mocha test spec for JSX._
 
-**From picture A.** I notice our adoptionForm component is broken and specifically our option JSX key property is not rendering the key property with the pet’s name.
+_From picture A._ I notice our adoptionForm component is broken and specifically our option JSX key property is not rendering the key property with the pet’s name.
 
 ![](2019-09-07-21-21-43.png)
 
@@ -173,12 +173,12 @@ This is often forgotten and so detrimental because sometimes we don’t see our 
 
 **This can simply be because of a poorly scoped and misplaced console.log() that is causing a parsing error or an infinite loop in our code.**
 
-In our case, this is a poorly scoped `console.log()` because our linter is yelling at me. - C - _clean your code environment_
+In our case, this is a poorly scoped `console.log()` because our linter is yelling at us. - C - _clean your code environment_
 
 I realized in JSX, you have to `console.log()` inside curly brackets, so I moved our `console.log()` inside our key property and replace the logic inside with a pet string comma delimited by a `pet` variable to easily label our `console.log()`.
 
 ```js
-16 <button type="button onClick={adoptPet}> Adopt Me! </button>
+16 <button type="button onClick={adoptPet}> Adopt Me!</button>
 17  <select onChange={petPreview}>{pets.map(pet => (
 18  <option  key={console.log("pet: ", pet)}>{pet.name}</option>
 ```

@@ -174,7 +174,7 @@ This is often forgotten and so detrimental because sometimes we don’t see our 
 
 In our case, this is a poorly scoped `console.log()`, because my linter is yelling at me. Which bounces us back to point C - _clean your code environment first_.
 
-I realized in JSX, you have to `console.log()` inside curly brackets and I move my `console.log()` inside my key property and replace the logic inside with `console.log()` and I attach a primitive string before it to easily label my `console.log()`.
+I realized in JSX, you have to `console.log()` inside curly brackets, so I moved my `console.log()` inside my key property and replace the logic inside with a pet string comma delimited by a `pet` variable to easily label my `console.log()`.
 
 ```js
 16 <button type="button onClick={adoptPet}> Adopt Me! </button>
@@ -194,10 +194,10 @@ I refactor my code to console.log pet's name.
 
 Long behold, I got what I wanted and I realized I was not dotting my pet object to extract the name, instead I was just rendering the entire pet object as a value for the key, which is not unique.
 
-I change the value of my key prop to pet.name instead of pet and I pass the test!
+I change the value of my key prop to `pet.name` instead of pet and I pass the test!
 
-In conclusion, there are a countless ways to debug in test driven development but wihout a proper foundation you can be running in circles only to find out you were missing a closing bracket.
+In conclusion, there are a countless ways to debug in test driven development but without a proper foundation you can be running in circles only to find out you were missing a closing bracket.
 
-Having the proper environment and knowing your do's and don'ts in tdd can really make or break a novice from a seasoned engineer.
+Having the proper environment and knowing your do's and don'ts in **test driven development** can really make or break a novice from a seasoned engineer.
 
 Until next time. I hope you will **CARD** it when the comes. Happy Coding! - _RL_

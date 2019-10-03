@@ -13,7 +13,7 @@ _We will go over two examples:_
 
 **1**. **Jasmine & vanilla JavaScript**
 
-**2**. **Mocha Enzyme & React JSX.**
+**2**. **Mocha Enzyme & React JSX**
 
 _I am also going to refer to the acronym -_
 
@@ -23,7 +23,7 @@ _I am also going to refer to the acronym -_
 
 **R** - **Read** the **developer tools** & **testing environment error** messages
 
-**D** - **Double check** if you have any **infinite logic** and in the **right scope**
+**D** - **Double check** if you have any **infinite logic** and/or within the **right scope**
 
 So next time when you approach a unit test, you will know. did I CARD it? or CRAD it?
 
@@ -35,13 +35,13 @@ Before anything make sure you have only **ONE** set of testing suite open each t
 
 Make sure you are looking at the right suite of test specs and click on the spec if you can, change into directory — if there is a deeper directory & run test script, pending other test specs manually works as well.
 
-By doing so you are isolating your unit test spec environment and all function calls will focus only on that block of code.
+By doing so you are isolating your unit testing environment and all function calls will focus only on that block of code.
 
 ![](2019-09-20-23-28-51.png)
 
 **Zero Linting Errors**:
 
-**Make sure there are no major linter errors and have a linter installed on your code editor! Otherwise, you will not be able to see your outputs in the console.**
+**Make sure there are no major linter errors and have a linter installed on your code editor! Otherwise, you will not be able to see any output in the console.**
 
 **Always write with tidy code and see if you have any syntax or reference errors.**
 
@@ -75,19 +75,17 @@ Otherwise, the unit test is giving us a hint - apparently our stack class is not
 
 ![](2019-09-07-20-59-53.png)
 
-This brings my attention to the beginning and end of my function - lines _40-43_ and _25-28_.
+_This brings our attention to the beginning and end of our function - lines 40-43 and 25-28_
 
-After examining my code, I noticed that I was missing a closing bracket because when I clicked on the last bracket on my class.
+After examining our code, I noticed that I was missing a closing bracket because when I clicked on the last bracket on our class.
 
-It indicated to me that the closing bracket was on my remove method.
+It indicated to me that the closing bracket was on our remove method.
 
-_Notice the transparent rectangles around my curly brackets. When they are both highlighted this indicates the opening and closing bracket of the current bracket you clicked on, whether its opening or closing._
+_Notice the transparent rectangles around our curly brackets. When they are both highlighted this indicates the current opening and closing bracket's you last clicked on._
 
 ![](2019-09-07-21-01-01.png)
 
 Hint: _Click on the last bracket of your nested functions or objects, to see where the opening or closing brackets end for each bracket declaration. For nested brackets, I use Rainbow Brackets from VS code extensions for easy bracket distinctions through colors._
-
-Double check to make sure you have zero linter errors one more time.
 
 ##A - Approach your where & what to `console.log()`
 
@@ -95,7 +93,7 @@ Double check to make sure you have zero linter errors one more time.
 
 A lot of unit tests will give you hints if you read its final expected definition.
 
-In this case, our unit test was more clear to find my where.
+In this case, the unit test was more clear to find our where.
 
 **However it is always on a case by case basis, so it is better to always read the test specs with developer tools opened at the same time to approach your where and what to `console.log()`.**
 
@@ -103,7 +101,7 @@ In this case, our unit test was more clear to find my where.
 
 It says expected “undefined” to equal “[ ]”. Clearly our `getStack()` method is returning `undefined` instead of an empty array.
 
-This indicates lines _30–32_ of my `getStack()` method. I realized I misspelled `this.store` in my `constructor()`. I quickly make adjustments, without any needed `console.log()` and get all my test specs to run.
+This indicates lines _30–32_ of our `getStack()` method. I realized I misspelled `this.store` in our `constructor()`. I quickly make adjustments, without any needed `console.log()` and get all our test specs to run.
 
 ```js
 30 getStack() {
@@ -114,43 +112,46 @@ This indicates lines _30–32_ of my `getStack()` method. I realized I misspelle
 ##R - Read the developer tools & testing environment error messages.
 
 ```js
-09 // C - clean your code environment & make sure you are in the right test suite.
-10 // A - approach your where and what to console.log
-11 // R - read the developer tools & testing environment error messages.
-12 // D - double check if you have any infinite logic and/or within the right scope
-
-13
-14 return (
-15  <div>
-16    <button type="button onClick={adoptPet}> Adopt Me! </button>
-17    <select onChange={petPreview}>{pets.map(pet => (<option key={pet}>{pet.name}
-18    </option>
-19    ))}
-20   </select>
-21  </div>
-22 )
+01 import React from 'react'
+02 // C - clean your code environment & make sure you are in the right test suite.
+03 // A - approach your where and what to console.log
+04 // R - read the developer tools & testing environment error messages.
+05 // D - double check if you have any infinite logic and/or within the right scope
+06
+07 export default const AdoptionForm = (props) => {
+08  const {pets, petPreview, adoptSelectedPet} = props
+09
+10  return (
+11    <div>
+12      <button type="button" onClick={adoptSelectedPet}> Adopt Me!</button>
+13      <select onChange={petPreview}>{pets.map(pet => (<option key={pet}>{pet.name}
+14      </option>))}
+16      </select>
+17    </div>
+18  )
+19 }
 
 ```
 
 ![](2019-09-07-21-19-26.png)
-Picture A.
+**_Picture A_**
 
 ![](2019-09-07-21-20-21.png)
-Picture B.
+**_Picture B_**
 
-Sometimes your test spec messages and developer settings are useful in finding the error and you still need to detective your way to where & what to `console.log()`.
+Sometimes your unit test messages and developer settings are useful in finding the error and you still need to find your where and what to `console.log()`.
 
 _For example in this mocha test spec for JSX._
 
-From picture A. I notice my adoptionForm component is broken and specifically my option JSX key property is not rendering the key property with the pet’s name.
+**From picture A.** I notice our adoptionForm component is broken and specifically our option JSX key property is not rendering the key property with the pet’s name.
 
 ![](2019-09-07-21-21-43.png)
 
-I go to my adoptionForm component, and go to line _18_ where my option tag is being rendered by React.
+I go to our adoptionForm component, and go to line _13_ where our option tag is being rendered by React.
 
 **What** - what variables are we using in our `console.log()`
 
-Based on early suggestion the render key prop is not rendering the right value, so why don’t we `console.log(pet)`.
+Based on early suggestion the render key prop is not rendering the right value, so why don’t we `console.log(pet)`
 
 ```js
 16 <button type="button onClick={adoptPet}> Adopt Me! </button>
@@ -162,19 +163,19 @@ _Do you see something wrong? I hit save and I get this scary error message in No
 
 ![](2019-09-07-21-32-07.png)
 
-My terminal is telling me there is something wrong with line _18_ and particularly the `console.log(pet)` as indicated by two red arrows.
+Our terminal is telling us there is something wrong with `console.log(pet)` as indicated by two red arrows.
 
 This brings us to our final acronym D.
 
 ##D - Double check if you have any infinite logic and/or within the right scope
 
-This is often forgotten and so detrimental because sometimes we don’t see our ourputs or even worse our laptop overloads.
+This is often forgotten and so detrimental because sometimes we don’t see our outputs or even worse our laptop overloads.
 
 **This can simply be because of a poorly scoped and misplaced console.log() that is causing a parsing error or an infinite loop in our code.**
 
-In our case, this is a poorly scoped `console.log()`, because my linter is yelling at me. Which bounces us back to point C - _clean your code environment first_.
+In our case, this is a poorly scoped `console.log()` because our linter is yelling at me. - C - _clean your code environment_
 
-I realized in JSX, you have to `console.log()` inside curly brackets, so I moved my `console.log()` inside my key property and replace the logic inside with a pet string comma delimited by a `pet` variable to easily label my `console.log()`.
+I realized in JSX, you have to `console.log()` inside curly brackets, so I moved our `console.log()` inside our key property and replace the logic inside with a pet string comma delimited by a `pet` variable to easily label our `console.log()`.
 
 ```js
 16 <button type="button onClick={adoptPet}> Adopt Me! </button>
@@ -182,9 +183,9 @@ I realized in JSX, you have to `console.log()` inside curly brackets, so I moved
 18  <option  key={console.log("pet: ", pet)}>{pet.name}</option>
 ```
 
-I open up my developer tools and notice I am getting back an object instead of a name string.
+I open up our developer tools and notice I am getting back an object instead of a name string.
 
-I refactor my code to console.log pet's name.
+I refactor our code to console.log pet's name.
 
 ```js
 16 <button type="button onClick={adoptPet}> Adopt Me! </button>
@@ -192,12 +193,10 @@ I refactor my code to console.log pet's name.
 18  <option  key={console.log("pet's name: ", pet.name)}>{pet.name}</option>
 ```
 
-Long behold, I got what I wanted and I realized I was not dotting my pet object to extract the name, instead I was just rendering the entire pet object as a value for the key, which is not unique.
+Long behold, I got what I wanted and I realized I was not dotting our pet object to extract the name, instead I was just rendering the entire pet object as a value for the key, which is not unique.
 
-I change the value of my key prop to `pet.name` instead of pet and I pass the test!
+I change the value of our key prop to `pet.name` instead of pet and I pass the test!
 
-In conclusion, there are a countless ways to debug in test driven development but without a proper foundation you can be running in circles only to find out you were missing a closing bracket.
-
-Having the proper environment and knowing your do's and don'ts in **test driven development** can really make or break a novice from a seasoned engineer.
+**In conclusion**, there are countless ways to debug in test driven development but having the proper environment and knowing your do's and don'ts in **test driven development** can really make or break a novice from a seasoned engineer.
 
 Until next time. I hope you will **CARD** it when the comes. Happy Coding! - _RL_

@@ -9,7 +9,7 @@ Since React is so popular among modern developers today, this blog is intended t
 
 **THE PROBLEM**: React doesn’t provide a stateful primitive simpler than a class component - _Dan Abramov, React.js conf._
 
-First we we will discuss state, then we will go over what **hooks** and **classes** are in React. Finally, we'll see how the release of hooks in **React 16.8** solved the following pain points:
+First we will briefly discuss state, then we will go over what **hooks** and **classes** are in React. Finally, we'll see how the release of hooks in **React 16.8** solved the following pain points:
 
 **1**. **Managing State**: **Reusing logic between multiple components** can lead to _wrapper hell_ or deeply nested components.
 
@@ -142,7 +142,7 @@ This is a concept called [coupling](<https://en.wikipedia.org/wiki/Coupling_(com
 
 Therefore our current state is the value of `count` which is zero, and our `incrementCounter` is the function which updates `count`.
 
-**Note**: `incrementCounter()` needs to be wrapped in a function and passed as a prop into our button.
+**Note**: `incrementCounter()` needs to be wrapped in a function and passed as a callback into our button.
 
 Notice how each variable correlates with its respective value, and our functions stay **DRY** and **reusable**.
 
@@ -343,7 +343,7 @@ _We would pass [counter] into the second argunent of useEffect()._
 
 If you are interested in learning more about hooks like accessing context api, etc. - [link to context api](https://reactjs.org/docs/hooks-reference.html#usecontext)
 
-While, hooks solved many of the pain points that we experienced using classes in React, there are still other use cases for classes.
+In conclusion, while hooks solved many of the pain points that we experienced using classes in React, there are still other use cases for classes.
 
 Again this guide was **not meant** to convince you to use hooks or completely refactor your classes to hooks.
 

@@ -22,17 +22,17 @@ First we we will discuss state, then we will go over what **hooks** and **classe
 ## Managing Local State
 
 <h4 align="center">What is state in React?</h4>
-In simple terms, state is simply an object which contains all your key-value pairs which determines how your components render & behave.
+In simple terms, state is simply an object which contains all your key-value pairs, state determines how your components render & behave.
 
-State allows your component to be dynamic and interactive.
-
-In order to access and manage state in a class you have to initialize `this.state` as an object within your `constructor()`, name your local state as a key, and set its initial value as the key's value.
-
-Furthermore, it is recommended to call `setState()` every time you want to modify state correctly pre hooks.
+_State allows your component to be dynamic and interactive._
 
 <h4 align="center">How classes manage local state in React</h4>
 
 Class components come from ES6 classes and is the default method for managing local state. It also allows for side effects to occur through lifecycle methods.
+
+In order to access and manage state in a class you have to initialize `this.state` as an object within your `constructor()`, name your local state as a key, and set its initial value as the key's value.
+
+Furthermore, it is recommended to call `setState()` every time you want to modify state correctly pre hooks.
 
 _Here is a simple example of a counter with an increment button written in a class._
 

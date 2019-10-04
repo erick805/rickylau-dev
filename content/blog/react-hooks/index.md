@@ -3,11 +3,11 @@ title: React Hooks vs Classes
 description: " "
 ---
 
-Since React is so popular among modern developers today, this blog is intended to give you the pros and cons of react hooks vs classes through React 16.8's release of **`useState()`** and **`useEffect()`**'s hooks api.
+Since React is so popular among modern developers today, this blog is intended to give you the pros and cons of react hooks vs classes through React 16.8's release of **`useState()`** and **`useEffect()`**'s hooks API.
 
 ![](react-hooks.png)
 
-**THE PROBLEM**: React doesn’t provide a stateful primitive simpler than a class component - _Dan Abramov, React.js conf._
+**THE PROBLEM**: React doesn’t provide a stateful primitive simpler than a class component - _Dan Abramov_
 
 First we will briefly discuss state, then we will go over what **hooks** and **classes** are in React. Finally, we'll see how the release of hooks in **React 16.8** solved the following pain points:
 
@@ -23,17 +23,19 @@ First we will briefly discuss state, then we will go over what **hooks** and **c
 
 <h4 align="center">What is state in React?</h4>
 
-In simple terms, state is simply an object which contains all your key-value pairs, state determines how your components render & behave.
+In simple terms, state is simply an object which contains all your key-value pairs, state determines how your components render and behave.
 
 State allows your component to be dynamic and interactive.
 
-_State not to be confused with props is what is managed within the component, where as props is what gets passed to the component._
+_State not to be confused with `props` is what is managed within the component, where as `props` is what gets passed to the component._
 
 <h4 align="center">How classes manage local state in React</h4>
 
 Class components come from ES6 classes and is the default method for managing local state. It also allows for side effects to occur through lifecycle methods.
 
 In order to access and manage state in a class you have to initialize `this.state` as an object within your `constructor()`, name your local state as a key, and set its initial value as the key's value.
+
+`setState()` is the default method for updating the state in a class and this is what causes a component to re-render.
 
 Furthermore, it is recommended to call `setState()` every time you want to modify state correctly pre hooks.
 
@@ -71,7 +73,7 @@ class Counter extends React.Component {
 
 In order to set up a class component, you need a fair bit of boilerplate code which is not limited to your conventional `constructor()` within your class, and the `super()` for extending the component.
 
-For instance, it is necessary to add the `this` context in class components.
+For instance, it is necessary to add the `this` context in class components and bind it inside the _constructor()_.
 
 We would need to bind the concept of `this` because of **implicit binding** in vanilla JavaScript.
 
@@ -105,7 +107,7 @@ There are **two rules** for hooks:
 
 **2.** _Only call hooks from React functions or custom hooks._
 
-Since React components are re-rendered each time data changes, this means the **exact same hooks** must be called in the **exact same order** on every single render. If we wrapped it in a conditional or function, the state would sometimes be created and sometimes wouldn't be.
+Since React components are re-rendered each time data changes, this means the **exact same hooks** must be called in the **exact same order** on every single render. If we wrapped our hooks in a conditional or function, the state would sometimes be created and other times wouldn't.
 
 **`useState()`** is a hook that lets you add React state to function components.
 
@@ -133,11 +135,13 @@ function Counter() {
 
 By importing and calling `useState()` it declares a "state variable" `counter` with a value of whatever argument is being passed into `useState()`. In this case, our state variable `counter` has a value of zero.
 
-`useState()` only takes one argument, the initial state.
-
 **Note**: **_`useState()`'s argument is not limited to an object, it can be a primitive e.g. numbers, strings, boolean, etc._**
 
+`useState()` only takes one argument, the initial state.
+
 `useState()` returns a pair of values, the current state and a function that updates it.
+
+**However, unlike `this.setState()` in a class, updating the current state always replaces it instead of merging it.**
 
 _By destructuring our array into two variables, we can use a more declarative approach, since we know the first value returned in the array is the current state, and the second value is the function that updates the state._
 
@@ -163,7 +167,7 @@ In the case of React, there are two common cases of side effects which include t
 
 Examples of effects without cleanup are network requests, manual DOM mutations, and logging. This is because we run them and immediately forget about them.
 
-If we wanted to cleanup after our side effects we would need to return a function with the unmount logic inside.
+**If we wanted to cleanup after our side effects we would need to return a function with the unmount logic inside.**
 
 **Side effects using classes im React**
 
@@ -208,7 +212,7 @@ class Counter extends React.Component {
 ```
 
 This is an example of a side effect being introduced through React’s lifecycle methods found in
-Classes. E.g. `componentDidMount()`, `componentDidUpdate()`, `componentWillUnMount()`
+classes. E.g. `componentDidMount()`, `componentDidUpdate()`, `componentWillUnMount()`
 
 In this example, the `componentDidMount()` “mounts” or sets up the title of the document to be the current count of the local state.
 
@@ -216,7 +220,7 @@ The `componentDidUpdate()` is invoked as soon as the updating happens, the most 
 
 If we wanted to reset the count, we would also need a componentWillUnMount().
 
-_Here is a better read on lifecycle methods - [React Lifecycle Methods - A Deep Dive by Mosh Hamedani](https://programmingwithmosh.com/javascript/react-lifecycle-methods/) if you are interested in learning more about lifecycle methods._
+_Here is a better read on lifecycle methods - [React Lifecycle Methods - A Deep Dive by Mosh Hamedani](https://programmingwithmosh.com/javascript/react-lifecycle-methods/)_
 
 **Side effects using React hooks**
 
@@ -246,6 +250,8 @@ function Counter() {
 }
 ```
 
+`useEffect()` lets you use side effects in your function components.
+
 `useEffect()` tells your component to do something after every render.
 
 React will remember the callback being passed in, and call it after the DOM updates.
@@ -256,15 +262,13 @@ Additionally `useEffect()` runs after every render, therefore it is like a `comp
 
 _During our 3 week capstone at Fullstack Academy of Code we utilized functional components with hooks using `useEffect()` to fetch NYC OPEN DATA and remote custom databases in arcGIS._
 
-_Here is our [Github: VisualNYC](https://github.com/1904cs-charlie-owl/VisualNYC) and our [features](https://rickylau.dev/visualnyc/)_, if you are interested.
+_Here is our [Github: VisualNYC](https://github.com/1904cs-charlie-owl/VisualNYC) and our [features](https://rickylau.dev/visualnyc/), if interested._
 
 ## Optimizing Performance by Skipping Effects
 
 **Class Example**:
 
 Cleaning up and applying the effect after every render is task heavy and we might right run into issues or bugs.
-
-In **class** components, we can combat this by adding an extra conditional into our `componentDidUpdate` function and passing in **`prevProps`** and **`prevState`** as parameters.
 
 _If for instance, we wanted to limit our `document.title` to be a maximum count of 10:_
 
@@ -308,6 +312,8 @@ class Counter extends React.Component {
 }
 ```
 
+In **class** components, we can combat this by adding an extra conditional into our `componentDidUpdate` function and passing in **`prevProps`** and **`prevState`** as parameters.
+
 **Hooks Example:**
 
 With **hooks**, we can simply pass a second argument into `useEffect()` as an array with count in it and add the conditional inside our `useEffect()`.
@@ -342,16 +348,16 @@ function Counter() {
 }
 ```
 
-_We would pass [counter] into the second argunent of useEffect()._
+_We would pass [counter] into the second argument of useEffect()._
 
-If you are interested in learning more about hooks like accessing context api, etc. - [link to context api](https://reactjs.org/docs/hooks-reference.html#usecontext)
-
-In conclusion, while hooks solved many of the pain points that we experienced using classes in React, there are still other use cases for classes. For example, if you wanted to access specifc lifecycle methods.
+**In conclusion**, while hooks solved many of the pain points that we experienced using classes in React, there are still other use cases for classes. For example, if you wanted to access specifc lifecycle methods.
 
 Again this guide was **not meant** to convince you to use hooks or completely refactor your classes to hooks.
 
-Just a friendly reminder that there are other options out there. Experiment!
+Just a friendly reminder that there are other options out there to experiment!
 
 If you are really interested in learning more about hooks, try to apply the concepts to new projects you initiate in the future instead.
 
 Until next time. **Happy Coding!** - *RL*
+
+If you are interested in learning more about hooks like accessing context API, etc. - [link to context API](https://reactjs.org/docs/hooks-reference.html#usecontext)

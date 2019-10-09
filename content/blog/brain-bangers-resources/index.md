@@ -13,12 +13,18 @@ description: " "
 ##Podcasts
 [Syntax.fm](https://syntax.fm/) by Syntax.fm
 
-##uDemy
+##Online Courses & Study Guides
+
 [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/) by Andrei Neagoie
 
 [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/js-algorithms-and-data-structures-masterclass/) by Colt Steele
 
+[AlgoExpert: Ace the Coding Interviews](https://www.algoexpert.io/product) by Clément Mihailescu and Antoine Pourchet
+
 ##Cheatsheets
+
+[Does it mutate](https://doesitmutate.xyz/) by Remy Sharp
+
 [Big-O Cheat Sheet](https://www.bigocheatsheet.com/) by Open Source
 
 [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) by Css-Tricks

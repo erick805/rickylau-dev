@@ -1,6 +1,6 @@
 ---
 title: Brain-Bangers & Resources
-description: " "
+description: "Resources for your brain"
 ---
 
 ##Youtube

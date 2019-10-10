@@ -1,6 +1,6 @@
 ---
 title: React Hooks vs Classes
-description: " "
+description: "Pros and cons of react hooks vs classes through React 16.8's release of useState and useEffect hooks API."
 ---
 
 Since React is so popular among modern developers today, this blog is intended to give you the pros and cons of react hooks vs classes through React 16.8's release of **`useState()`** and **`useEffect()`**'s hooks API.

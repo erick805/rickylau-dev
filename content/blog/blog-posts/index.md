@@ -1,6 +1,6 @@
 ---
 title: Blog Posts
-description: " "
+description: "Blog Directory"
 ---
 
 ##[How to console.log() in test driven development](https://rickylau.dev/debug/)

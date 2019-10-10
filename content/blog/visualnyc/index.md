@@ -1,9 +1,9 @@
 ---
 title: VisualNYC
-description: Interactive map of New York City featuring data visualizations of crime statistics based on NYC open data.
+description: Interactive heatmap of New York City featuring data visualizations of crime statistics based on NYC open data.
 ---
 
-Interactive map of New York City featuring data visualizations of 2018 crime statistics based on NYC open data.
+Interactive heatmap of New York City featuring data visualizations of 2018 crime statistics based on NYC open data.
 
 ---
 

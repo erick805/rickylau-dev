@@ -19,4 +19,4 @@ First person endless runner with webcam capture motion machine learning.
 
 [vintage-vidya-games](https://vintage-vidya-games.herokuapp.com/)
 
-NES styled full stack e-commerce website with sound. (not mobile friendly currently)
+NES styled full stack e-commerce progressive web app with sound and integrated Stripe payments API. (not mobile friendly currently)

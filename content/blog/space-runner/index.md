@@ -7,7 +7,7 @@ description: First person endless runner with webcam capture motion machine lear
 
 ![](space-runner.png)
 
-![](space-runner-gameplay.png)
+![](./space-runner-gameplay.png)
 
 FIRST PERSON ENDLESS RUNNER prototype w/ webcam motion capture Machine Learning.
 

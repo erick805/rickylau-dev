@@ -1,9 +1,9 @@
 ---
 title: Vintage Vidya Games
-description: Full stack e-commerce progressive web application with NES styled layout and NES mario sounds.
+description: Full-stack NES themed e-commerce Progressive Web App (PWA) in progress complete with graphics and Super Mario Bros. game sounds, that offers old-school video games for sale.
 ---
 
-Vintage Vidya Games is an NES themed e-commerce web app complete with graphics and sound, that offers old-school video games for sale.
+Vintage Vidya Games is an NES themed e-commerce Progressive Web App (PWA) in progress complete with graphics and Super Mario Bros. game sounds, that offers old-school video games for sale.
 
 ![](vvg-top2.png)
 

@@ -19,4 +19,4 @@ First person endless runner with webcam capture motion machine learning.
 
 [vintage-vidya-games](https://vintage-vidya-games.herokuapp.com/)
 
-NES styled full stack e-commerce progressive web app with sound and integrated Stripe payments API. (not mobile friendly currently)
+Vintage Vidya Games is an NES themed e-commerce Progressive Web App (PWA) in progress complete with graphics and Super Mario Bros. game sounds, that offers old-school video games for sale.

@@ -10,6 +10,9 @@ description: "Resources for your brain"
 
 [DesignCourse](https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow) by DesignCourse
 
+##GitHubs
+[Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript) by Ryan McDermott
+
 ##Podcasts
 [Syntax.fm](https://syntax.fm/) by Syntax.fm
 
@@ -22,6 +25,7 @@ description: "Resources for your brain"
 [AlgoExpert: Ace the Coding Interviews](https://www.algoexpert.io/product) by Clément Mihailescu and Antoine Pourchet
 
 ##Cheatsheets
+[MDN web docs - Resources for developers, by developers.](https://developer.mozilla.org/en-US/) by Mozilla and individual contributors
 
 [Does it mutate](https://doesitmutate.xyz/) by Remy Sharp
 
@@ -37,6 +41,14 @@ description: "Resources for your brain"
 
 [Getting Started React](https://reactjs.org/docs/getting-started.html) by reactjs
 
+[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) by Adam Pritchard
+
+[Stackshare - The open source tools and SaaS behind popular tech companies](https://stackshare.io/stacks) by StackShare, Inc.
+
+##Other Blogs
+
 [Master the JavaScript Interview: What is a Closure?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36) by Eric Elliott
 
 [Sequelize Associations & Magic Methods](https://medium.com/@julianne.marik/sequelize-associations-magic-methods-c72008db91c9) by Julianne Crawford
+
+[How to test your React apps with the React Testing Library](https://www.freecodecamp.org/news/test-react-apps-with-react-testing-library/) by Thomas Lombart

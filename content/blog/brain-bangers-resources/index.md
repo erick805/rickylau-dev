@@ -12,9 +12,11 @@ description: "Resources for your brain"
 
 ##GitHubs
 [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript) by Ryan McDermott
+[The System Design Primer](https://github.com/donnemartin/system-design-primer) by Donne Martin
 
 ##Podcasts
 [Syntax.fm](https://syntax.fm/) by Syntax.fm
+[Base.cs](https://www.codenewbie.org/basecs) by Base.cs
 
 ##Online Courses & Study Guides
 
@@ -23,6 +25,8 @@ description: "Resources for your brain"
 [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/js-algorithms-and-data-structures-masterclass/) by Colt Steele
 
 [AlgoExpert: Ace the Coding Interviews](https://www.algoexpert.io/product) by Clément Mihailescu and Antoine Pourchet
+
+[Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview) by Design Gurus
 
 ##Cheatsheets
 [MDN web docs - Resources for developers, by developers.](https://developer.mozilla.org/en-US/) by Mozilla and individual contributors

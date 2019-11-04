@@ -3,7 +3,7 @@ title: About Me
 description: Full Stack Developer. Fitness Enthusiast. Problem Solver.
 ---
 
-Just your everyday learner and code monkey.
+Just your everyday learner, human and tech programmer.
 
 ![](profile-pic.jpg)
 
@@ -29,4 +29,4 @@ My first few months were self guided study with a couple of udemy courses and yo
 
 Where I graduated, and currently working as a Teaching Fellow for the upcoming cohort of 1909 WDF.
 
-Always eager and hungry to learn, I am inspired by AR/VR design & emerging tech and hope to bring people closer together through social value, physical and mental betterment, community, and experiences.
+Always eager and hungry to learn, I am inspired by deep learning & emerging tech and hope to bring people closer together through social value, physical and mental betterment, community, and impactful experiences.

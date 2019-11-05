@@ -10,12 +10,16 @@ description: "Resources for your brain"
 
 [DesignCourse](https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow) by DesignCourse
 
+[JavaScript Conferences](https://www.youtube.com/user/jsconfeu) by JSConf
+
 ##GitHubs
 [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript) by Ryan McDermott
+
 [The System Design Primer](https://github.com/donnemartin/system-design-primer) by Donne Martin
 
 ##Podcasts
 [Syntax.fm](https://syntax.fm/) by Syntax.fm
+
 [Base.cs](https://www.codenewbie.org/basecs) by Base.cs
 
 ##Online Courses & Study Guides

@@ -9,7 +9,7 @@ description: First person endless runner with webcam capture motion machine lear
 
 ![](./space-runner-gameplay.png)
 
-FIRST PERSON ENDLESS RUNNER prototype w/ webcam motion capture Machine Learning.
+FIRST PERSON ENDLESS RUNNER prototype with webcam motion capture using Machine Learning.
 
 Project was done as a two person team in a 4 day hackathon sprint. Technologies used to generate 3D images was three.js and browser side motion capture using ml5.js PoseNet.
 
@@ -26,7 +26,7 @@ Project was done as a two person team in a 4 day hackathon sprint. Technologies 
 
 three.js
 ml5.js
-tenserflow
+Tensorflow
 poseNet()
 
 ## Dev Team

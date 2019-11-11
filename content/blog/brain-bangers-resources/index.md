@@ -17,6 +17,8 @@ description: "Resources for your brain"
 
 [The System Design Primer](https://github.com/donnemartin/system-design-primer) by Donne Martin
 
+[JavaScript Algorithms](https://github.com/trekhleb/javascript-algorithms) by Oleksii Trekhleb
+
 ##Podcasts
 [Syntax.fm](https://syntax.fm/) by Syntax.fm
 
@@ -62,3 +64,5 @@ description: "Resources for your brain"
 [Sequelize Associations & Magic Methods](https://medium.com/@julianne.marik/sequelize-associations-magic-methods-c72008db91c9) by Julianne Crawford
 
 [How to test your React apps with the React Testing Library](https://www.freecodecamp.org/news/test-react-apps-with-react-testing-library/) by Thomas Lombart
+
+[11 JavaScript Utility Libraries you Should Know in 2019](https://blog.bitsrc.io/11-javascript-utility-libraries-you-should-know-in-2018-3646fb31ade) by Jonathan Saring

@@ -24,6 +24,8 @@ description: "Resources for your brain"
 
 [Base.cs](https://www.codenewbie.org/basecs) by Base.cs
 
+[Artificial Intelligence Podcast](https://lexfridman.com/ai/) by Lex Fridman
+
 ##Online Courses & Study Guides
 
 [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/) by Andrei Neagoie

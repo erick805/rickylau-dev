@@ -4,13 +4,15 @@ description: "Resources for your brain"
 ---
 
 ##Youtube
-[JavaScript: How It's Made](https://www.youtube.com/watch?v=FSs_JYwnAdI) by Fireship
+[Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA) by Fireship
 
 [The Coding Train](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) by The Coding Train
 
 [DesignCourse](https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow) by DesignCourse
 
 [JavaScript Conferences](https://www.youtube.com/user/jsconfeu) by JSConf
+
+[Computerphile](https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA) by Computerphile
 
 ##GitHubs
 [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript) by Ryan McDermott

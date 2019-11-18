@@ -4,6 +4,7 @@ description: "Resources for your brain"
 ---
 
 ##Youtube
+
 [Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA) by Fireship
 
 [The Coding Train](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) by The Coding Train
@@ -15,6 +16,7 @@ description: "Resources for your brain"
 [Computerphile](https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA) by Computerphile
 
 ##GitHubs
+
 [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript) by Ryan McDermott
 
 [The System Design Primer](https://github.com/donnemartin/system-design-primer) by Donne Martin
@@ -22,6 +24,7 @@ description: "Resources for your brain"
 [JavaScript Algorithms](https://github.com/trekhleb/javascript-algorithms) by Oleksii Trekhleb
 
 ##Podcasts
+
 [Syntax.fm](https://syntax.fm/) by Syntax.fm
 
 [Base.cs](https://www.codenewbie.org/basecs) by Base.cs
@@ -39,6 +42,7 @@ description: "Resources for your brain"
 [Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview) by Design Gurus
 
 ##Cheatsheets
+
 [MDN web docs - Resources for developers, by developers.](https://developer.mozilla.org/en-US/) by Mozilla and individual contributors
 
 [Does it mutate](https://doesitmutate.xyz/) by Remy Sharp

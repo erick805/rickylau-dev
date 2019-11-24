@@ -5,15 +5,17 @@ description: "Resources for your brain"
 
 ##Youtube
 
-[Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA) by Fireship
+[Fireship - ecosystem of detailed and practical resources for high-quality apps](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA) by Fireship
 
-[The Coding Train](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) by The Coding Train
+[The Coding Train - creative coding video tutorials](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) by The Coding Train
 
-[DesignCourse](https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow) by DesignCourse
+[DesignCourse - online video training library for learning design and development](https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow) by DesignCourse
 
 [JavaScript Conferences](https://www.youtube.com/user/jsconfeu) by JSConf
 
-[Computerphile](https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA) by Computerphile
+[Computerphile - videos about computers and computer stuff](https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA) by Computerphile
+
+[Google Chrome Developers](https://www.youtube.com/user/ChromeDevelopers) by Google Chrome Developers
 
 ##GitHubs
 

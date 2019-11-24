@@ -5,15 +5,15 @@ description: "Resources for your brain"
 
 ##Youtube
 
-[Fireship - ecosystem of detailed and practical resources for high-quality apps](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA) by Fireship
+[Fireship - Ecosystem of detailed and practical resources for high-quality apps](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA) by Fireship
 
-[The Coding Train - creative coding video tutorials](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) by The Coding Train
+[The Coding Train - Creative coding video tutorials](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) by The Coding Train
 
-[DesignCourse - online video training library for learning design and development](https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow) by DesignCourse
+[DesignCourse - Online video training library for learning design and development](https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow) by DesignCourse
 
 [JavaScript Conferences](https://www.youtube.com/user/jsconfeu) by JSConf
 
-[Computerphile - videos about computers and computer stuff](https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA) by Computerphile
+[Computerphile - Videos about computers and computer stuff](https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA) by Computerphile
 
 [Google Chrome Developers](https://www.youtube.com/user/ChromeDevelopers) by Google Chrome Developers
 
@@ -59,9 +59,11 @@ description: "Resources for your brain"
 
 [Sequelize Documentation](https://sequelizedocs.fullstackacademy.com/) by Fullstack Academy
 
-[Regular Expressions](https://regexr.com/) by gskinner
+[Regular Expressions](https://regexr.com/) by Grant Skinner
 
-[Getting Started React](https://reactjs.org/docs/getting-started.html) by reactjs
+[Getting Started React](https://reactjs.org/docs/getting-started.html) by Facebook Open Source
+
+[Getting Started Next.js](https://nextjs.org/learn/basics/getting-started) by Zeit, Inc.
 
 ##Cheatsheets
 
@@ -69,7 +71,21 @@ description: "Resources for your brain"
 
 [Measure - See how well your website performs](https://web.dev/measure) by Google Developers
 
-[Bundlephobia - find the cost of adding a npm package to your bundle](https://bundlephobia.com/) by Shubham Kanodia
+[Bundlephobia - Find the cost of adding a npm package to your bundle](https://bundlephobia.com/) by Shubham Kanodia
+
+[Flare - Bring your apps and games to life with real-time animation](https://www.2dimensions.com/about-flare) by 2Dimensions
+
+[Figma - Help teams create, test, and ship better designs from start to finish](https://www.figma.com/) by Figma
+
+[Cloudcraft - Create smart AWS diagrams](https://cloudcraft.co/) by Cloudcraft Inc
+
+[Font Flipper - Preview Google fonts on top of your designs](https://fontflipper.com/upload) by Font Flipper
+
+[Insomnia - Cross-platform GraphQL and REST client](https://insomnia.rest/) by Kong Inc.
+
+[Squoosh - Compress and compare images with different codecs](https://squoosh.app/) by Squoosh
+
+[Web Almanac - HTTP Archive's annual state of the web report](https://almanac.httparchive.org/en/2019/) by Web Almanac.
 
 ##Other Blogs
 

@@ -45,6 +45,8 @@ description: "Resources for your brain"
 
 [Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview) by Design Gurus
 
+[This is CS50](https://cs50.harvard.edu/college/) by Harvard University
+
 ##Documentation
 
 [MDN web docs - Resources for developers, by developers.](https://developer.mozilla.org/en-US/) by Mozilla and individual contributors

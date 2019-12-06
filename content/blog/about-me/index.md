@@ -15,18 +15,19 @@ than 6 years, I still enjoy it very much so, but I was missing the learning thre
 Not to mention it is physically tasking on the body depending on who and what you operate on.
 
 So I was losing both mentally in growth and physically in health. Don't get me wrong I was young
-and despite all the critics I maintained a healthy lifestyle of training 4-8 clients a day and
-teaching 7 classes a day. It was fun and I still love it till this very day, but for me, I wanted
+and despite all the critics I maintained a healthy lifestyle of training 4-8 clients and coaching 7 classes a day. It was fun and I still love it till this very day, but for me, I wanted
 challenge. So I opened my first online e-commerce business two months in coming back from China.
 
 It was a very small startup consisting of two people, and that was where I first got my hands into programming.
 
-Editing html and css within Shopify's e-commerce platform.
+Editing html and css within Shopify's e-commerce CMS.
 
-I enjoyed it very much so, and once finally finishing my degree in Kinesiology, decided to venture into the world of code.
+Fascinated by the intricacies of modern web development, and once finally finishing my degree in Kinesiology, I decided to venture into the world of code.
 
-My first few months were self guided study with a couple of udemy courses and youtube videos and eventually I decided to invest into a bootcamp in Fall of 2018. I applied early 2019 and was immediately accepted into [Fullstack Academy of Code](https://www.fullstackacademy.com/).
+My first few months were self guided study with a couple of online courses and youtube videos and eventually I decided to invest into a bootcamp in Fall of 2018. I applied early 2019 and was immediately accepted into [Fullstack Academy of Code](https://www.fullstackacademy.com/).
 
-Where I graduated, and currently working as a Teaching Fellow for the upcoming cohort of 1909 WDF.
+Where I graduated, and currently working as a Teaching Fellow for the cohort of 1909 NYC WDF.
 
-Always eager and hungry to learn, I am inspired by deep learning & emerging tech and hope to bring people closer together through social value, physical and mental betterment, community, and impactful experiences.
+Always eager and hungry to learn, I am driven by incremental progress to unbox complex problems and hope to bring people closer together through social value, physical and mental betterment, community, and impactful experiences.
+
+-RL

@@ -35,6 +35,8 @@ description: "Resources for your brain"
 
 [Artificial Intelligence Podcast](https://lexfridman.com/ai/) by Lex Fridman
 
+[Coding Blocks](https://www.codingblocks.net/) by Coding Blocks
+
 ##Online Courses & Study Guides
 
 [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/) by Andrei Neagoie

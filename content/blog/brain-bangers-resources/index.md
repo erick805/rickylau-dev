@@ -17,7 +17,7 @@ description: "Resources for your brain"
 
 [Google Chrome Developers](https://www.youtube.com/user/ChromeDevelopers) by Google Chrome Developers
 
-[Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) by Traversy Media
+[Traversy Media - Web development & programming tutorials](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) by Traversy Media
 
 ##GitHubs
 

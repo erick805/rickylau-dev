@@ -17,6 +17,8 @@ description: "Resources for your brain"
 
 [Google Chrome Developers](https://www.youtube.com/user/ChromeDevelopers) by Google Chrome Developers
 
+[Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) by Traversy Media
+
 ##GitHubs
 
 [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript) by Ryan McDermott

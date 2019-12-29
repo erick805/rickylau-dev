@@ -27,6 +27,10 @@ description: "Resources for your brain"
 
 [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) by Adam Pritchard
 
+[Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks) by Rehooks
+
+[Awesome TypeScript](https://github.com/dzharii/awesome-typescript) by Dmytro Zharii
+
 ##Podcasts
 
 [Syntax.fm](https://syntax.fm/) by Syntax.fm
@@ -61,13 +65,15 @@ description: "Resources for your brain"
 
 [Express Native Documentation](https://expressjs.com/en/api.html) by Express
 
-[Sequelize Documentation](https://sequelizedocs.fullstackacademy.com/) by Fullstack Academy
-
 [Regular Expressions](https://regexr.com/) by Grant Skinner
 
 [Getting Started React](https://reactjs.org/docs/getting-started.html) by Facebook Open Source
 
 [Getting Started Next.js](https://nextjs.org/learn/basics/getting-started) by Zeit, Inc.
+
+[Feathers.js - real time application framework](https://feathersjs.com/) by Feathers contributors
+
+[Sequelize Documentation](https://sequelizedocs.fullstackacademy.com/) by Fullstack Academy
 
 ##Cheatsheets
 
@@ -90,6 +96,10 @@ description: "Resources for your brain"
 [Squoosh - Compress and compare images with different codecs](https://squoosh.app/) by Squoosh
 
 [Web Almanac - HTTP Archive's annual state of the web report](https://almanac.httparchive.org/en/2019/) by Web Almanac.
+
+[useHooks - Easy to understand custom React hooks](https://usehooks.com/) by Gabe Ragland
+
+[Collection of React hooks - by filter](https://nikgraf.github.io/react-hooks/) by Nik Graf
 
 ##Other Blogs
 

@@ -99,7 +99,11 @@ description: "Resources for your brain"
 
 ##CSS
 
+[Grid by Example - CSS Grid](https://gridbyexample.com/examples/) by Rachel Andrew
+
 [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) by Css-Tricks
+
+[Coolors - Super fast color schemes generator](https://coolors.co/) by Coolors
 
 ##Tools
 

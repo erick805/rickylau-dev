@@ -33,6 +33,12 @@ description: "Resources for your brain"
 
 [Awesome TypeScript](https://github.com/dzharii/awesome-typescript) by Dmytro Zharii
 
+[GraphiQL - in-browser IDE for GraphQL](https://github.com/graphql/graphiql) by GraphQL
+
+[Apollo-client](https://github.com/apollographql/apollo-client) by Apollo GraphQL
+
+[Apollo-server](https://github.com/apollographql/apollo-server) by Apollo GraphQL
+
 ##Podcasts
 
 [Syntax.fm](https://syntax.fm/) by Syntax.fm

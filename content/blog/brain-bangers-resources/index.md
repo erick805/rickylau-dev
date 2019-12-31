@@ -77,7 +77,7 @@ description: "Resources for your brain"
 
 [Sequelize Documentation](https://sequelizedocs.fullstackacademy.com/) by Fullstack Academy
 
-##Cheatsheets
+##Tools
 
 [Stackshare - The open source tools and SaaS behind popular tech companies](https://stackshare.io/stacks) by StackShare, Inc.
 

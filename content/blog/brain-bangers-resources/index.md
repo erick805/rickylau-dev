@@ -61,21 +61,11 @@ description: "Resources for your brain"
 
 [This is CS50](https://cs50.harvard.edu/college/) by Harvard University
 
-##Documentation
-
-[MDN web docs - Resources for developers, by developers.](https://developer.mozilla.org/en-US/) by Mozilla and individual contributors
-
-[Does it mutate](https://doesitmutate.xyz/) by Remy Sharp
-
-[Big-O Cheat Sheet](https://www.bigocheatsheet.com/) by Open Source
-
-[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) by Css-Tricks
-
-[Express Native Documentation](https://expressjs.com/en/api.html) by Express
-
-[Regular Expressions](https://regexr.com/) by Grant Skinner
+##Tech Stack Documentation
 
 [Getting Started React](https://reactjs.org/docs/getting-started.html) by Facebook Open Source
+
+[Express Native Documentation](https://expressjs.com/en/api.html) by Express
 
 [Getting Started Next.js](https://nextjs.org/learn/basics/getting-started) by Zeit, Inc.
 
@@ -83,11 +73,29 @@ description: "Resources for your brain"
 
 [Sequelize Documentation](https://sequelizedocs.fullstackacademy.com/) by Fullstack Academy
 
-##Tools
+##References
+
+[MDN web docs - Resources for developers, by developers.](https://developer.mozilla.org/en-US/) by Mozilla and individual contributors
+
+[Does it mutate](https://doesitmutate.xyz/) by Remy Sharp
+
+[Big-O Cheat Sheet](https://www.bigocheatsheet.com/) by Open Source
 
 [Stackshare - The open source tools and SaaS behind popular tech companies](https://stackshare.io/stacks) by StackShare, Inc.
 
 [Measure - See how well your website performs](https://web.dev/measure) by Google Developers
+
+[Web Almanac - HTTP Archive's annual state of the web report](https://almanac.httparchive.org/en/2019/) by Web Almanac.
+
+[useHooks - Easy to understand custom React hooks](https://usehooks.com/) by Gabe Ragland
+
+[Collection of React hooks - by filter](https://nikgraf.github.io/react-hooks/) by Nik Graf
+
+##CSS
+
+[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) by Css-Tricks
+
+##Tools
 
 [Bundlephobia - Find the cost of adding a npm package to your bundle](https://bundlephobia.com/) by Shubham Kanodia
 
@@ -103,11 +111,7 @@ description: "Resources for your brain"
 
 [Squoosh - Compress and compare images with different codecs](https://squoosh.app/) by Squoosh
 
-[Web Almanac - HTTP Archive's annual state of the web report](https://almanac.httparchive.org/en/2019/) by Web Almanac.
-
-[useHooks - Easy to understand custom React hooks](https://usehooks.com/) by Gabe Ragland
-
-[Collection of React hooks - by filter](https://nikgraf.github.io/react-hooks/) by Nik Graf
+[Regular Expressions](https://regexr.com/) by Grant Skinner
 
 ##Other Blogs
 

@@ -39,6 +39,8 @@ description: "Resources for your brain"
 
 [Apollo-server](https://github.com/apollographql/apollo-server) by Apollo GraphQL
 
+[React Spring - spring physics based animation library](https://github.com/react-spring/react-spring) by React Spring
+
 ##Podcasts
 
 [Syntax.fm](https://syntax.fm/) by Syntax.fm
@@ -72,6 +74,8 @@ description: "Resources for your brain"
 [Apollo Client Documentation](https://www.apollographql.com/docs/react/) by Apollo GraphQL
 
 [Apollo Server Documentation](https://www.apollographql.com/docs/apollo-server/) by Apollo GraphQL
+
+[Gatsby - Blazing fast modern site generator for React](https://www.gatsbyjs.org/) by Gatsby, Inc.
 
 [Feathers.js - real time application framework](https://feathersjs.com/) by Feathers contributors
 

@@ -5,7 +5,7 @@ description: "Beginner friendly debugging blueprint on mistakes to avoid."
 
 ![](2019-09-12-16-03-49.png)
 
-Hi, this brief guide is written to give you beginner friendly tips to follow, so you can avoid early mistakes in any JavaScript testing environment.
+Hi, this brief guide is written to give you beginner-friendly tips to follow, so you can avoid early mistakes in any JavaScript testing environment.
 
 _We will go over two examples:_
 
@@ -55,9 +55,9 @@ _Here we have an example of an unclean code environment._
 43
 ```
 
-If you look closely, you will notice the signals your developer tools and code editor are giving to you if you have a linter installed.
+If you look closely, you will notice the signals your developer tools and the code editor are giving to you if you have a linter installed.
 
-Otherwise, the unit test is giving us a hint - apparently our stack class is not even defined.
+Otherwise, the unit test is giving us a hint - apparently, our stack class is not even defined.
 
 ![](2019-09-07-20-59-53.png)
 
@@ -169,7 +169,7 @@ In JSX, you have to console.log() within each JSX element's scope and this means
 
 Therefore, we have to move our console.log() inside our key property's scope or "curly brackets" in JavaScript.
 
-We replace our logic inside with a pet string comma delimited with a pet variable so we can easily label our console.log() in our console.
+We replace our logic inside with a pet string comma-delimited with a pet variable so we can easily label our console.log() in our console.
 
 ```js
 16 <button type="button onClick={adoptPet}> Adopt Me!</button>
@@ -193,6 +193,6 @@ Long behold, I got what I wanted and I realized I was not accessing the value of
 
 I change the value of our key prop to `pet.name` instead of `pet` and I pass the test.
 
-**In conclusion**, there are countless ways to debug in test driven development but having the proper environment and knowing your do's and don'ts in test driven development can really make or break your hours or days.
+**In conclusion**, there are countless ways to debug in test-driven development but having the proper environment and knowing your do's and don'ts in test-driven development can really make or break your hours or days.
 
 Until next time. I hope you will CARD it when the comes. Happy Coding! - RL

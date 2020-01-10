@@ -5,7 +5,7 @@ description: "Beginner friendly debugging blueprint on mistakes to avoid."
 
 ![](2019-09-12-16-03-49.png)
 
-Hi, this brief guide is written to give you beginner friendly tips to follow, so you can avoid early mistakes in any testing environment.
+Hi, this brief guide is written to give you beginner friendly tips to follow, so you can avoid early mistakes in any JavaScript testing environment.
 
 _We will go over two examples:_
 
@@ -87,7 +87,7 @@ In this case, the unit test was more clear to find our where.
 
 It says expected “undefined” to equal “[ ]”. Clearly our `getStack()` method is returning `undefined` instead of an empty array.
 
-This indicates lines _30–32_ of our `getStack()` method. I realized I misspelled `this.store` in our `constructor()`. I quickly make adjustments, without any needed `console.log()` and get all our test specs to run.
+This indicates lines _30–32_ of our `getStack()` method. I realized I misspelled `this.store` in our `getStack()` method. I quickly make adjustments, without any needed `console.log()` and get all our test specs to run.
 
 ```js
 30 getStack() {
@@ -149,13 +149,11 @@ Since we know our pets array is being mapped into each pet object, why don't we 
 18  <option console.log(pet) key={pet}>{pet.name}</option>
 ```
 
-_Do you see something wrong? I hit save and I get this scary error message in Node.js_
-
 ![](2019-09-07-21-32-07.png)
 
-*Do you see something wrong? I hit save and I get this scary error message in Node.js.*
+_Do you see something wrong? I hit save and I get this scary error message in Node.js._
 
-*Our testing environment is telling us there is something wrong with console.log(pet) as indicated by two red arrows.*
+_Our testing environment is telling us there is something wrong with console.log(pet) as indicated by two red arrows._
 
 This brings us to our final acronym D.
 
@@ -179,11 +177,11 @@ We replace our logic inside with a pet string comma delimited with a pet variabl
 18  <option  key={console.log("pet: ", pet)}>{pet.name}</option>
 ```
 
-*I check my node environment for expected outputs and notice we are getting back an object with a name key.*
+_I check my node environment for expected outputs and notice we are getting back an object with a name key._
 
 ![](2019-10-10-00-23-07.png)
 
-*I refactor our code to dot of our pet object with a comma delimited pet's name string.*
+_I refactor our code to dot of our pet object with a comma delimited pet's name string._
 
 ```js
 16 <button type="button onClick={adoptPet}> Adopt Me! </button>
@@ -195,6 +193,6 @@ Long behold, I got what I wanted and I realized I was not accessing the value of
 
 I change the value of our key prop to `pet.name` instead of `pet` and I pass the test.
 
-**In conclusion**, there are countless ways to debug in test driven development but having the proper environment and knowing your do's and don'ts in test driven development can really make or break your hours or days. I hope this
+**In conclusion**, there are countless ways to debug in test driven development but having the proper environment and knowing your do's and don'ts in test driven development can really make or break your hours or days.
 
 Until next time. I hope you will CARD it when the comes. Happy Coding! - RL

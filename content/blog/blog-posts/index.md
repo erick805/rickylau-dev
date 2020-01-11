@@ -5,7 +5,7 @@ description: "Blog Directory"
 
 ##[How to console.log() in test driven development](https://rickylau.dev/debug/)
 
-Foundational beginner friendly blueprint for debugging JavaScript with console.log in test driven environment.
+Foundational beginner friendly blueprint for debugging JavaScript code using console.log in test driven environment.
 
 ##[React Hooks vs Classes](https://rickylau.dev/react-hooks/)
 

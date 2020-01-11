@@ -1,6 +1,6 @@
 ---
 title: About Me
-description: Full Stack Developer. Fitness Enthusiast. Problem Solver.
+description: " "
 ---
 
 Just your everyday learner, human and tech programmer.

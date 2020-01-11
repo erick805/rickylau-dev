@@ -31,7 +31,7 @@ class Layout extends React.Component {
               {title}
             </Link>
           </h1>
-          <h3>Full-stack Developer. Fitness Enthusiast. Forever Learner.</h3>
+          <h3>Full-stack Developer. Emerging Tech. Forever Learner.</h3>
         </div>
       )
     } else {

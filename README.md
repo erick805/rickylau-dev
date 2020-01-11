@@ -6,7 +6,7 @@
 </p>
 <h1 align="center">My Portfolio & Blog built with Gatsby</h1>
 
-<h2 align="center">Full-stack developer. Fitness enthusiast. Problem solver.</h2>
+<h2 align="center">Full-stack developer. Emerging Tech. Forever Learner.</h2>
 
 <h3 align="center">My Journey to Code</h3>
 

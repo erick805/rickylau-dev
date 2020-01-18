@@ -10,25 +10,24 @@
 
 <h3 align="center">My Journey to Code</h3>
 
-It all started Fall of 2017, I had just come back from a hiatus in China, and was
+It all started Fall of 2017, I had just come back from hiatus and was
 contemplating my life decisions. Having been in the fitness workforce for more
-than 6 years, I still enjoy it very much so, but I was missing the learning threshold.
-Not to mention it is physically tasking on the body depending on who and what you operate on.
+than 7 years, I still enjoy it very much so, but I was missing the challenge and learning threshold.
 
-So I was losing both mentally in growth and physically in health. Don't get me wrong I was young
-and despite all the critics I maintained a healthy lifestyle of training 4-8 clients and coaching 7 classes a day. It was fun and I still love it till this very day, but for me, I wanted
-challenge. So I opened my first online e-commerce business two months in coming back from China.
+Don't get me wrong, I was young and maintained a healthy lifestyle of training 4-8 clients and coaching 7 classes a day. It was fun and I still love it till this very day, but I wanted mental growth. So I opened my first online e-commerce website two months after coming back from Asia.
 
 It was a very small startup consisting of two people, and that was where I first got my hands into programming.
 
-Editing html and css within Shopify's e-commerce CMS.
+Editing HTML and CSS within Shopify's content management system.
 
-Fascinated by the intricacies of modern web development, and once finally finishing my degree in Kinesiology, I decided to venture into the world of code.
+Fascinated by the intricacies of modern web development, I decided to venture into the world of code.
 
-My first few months were self guided study with a couple of online courses and youtube videos and eventually I decided to invest into a bootcamp in Fall of 2018. I applied early 2019 and was immediately accepted into [Fullstack Academy of Code](https://www.fullstackacademy.com/).
+My first few months were self guided study and eventually I decided to invest into full stack web development in Fall of 2018. I applied early 2019 and was immediately accepted into [Fullstack Academy of Code](https://www.fullstackacademy.com/).
 
-Where I graduated, and currently working as a Teaching Fellow for the cohort of 1909 NYC WDF.
+Where I graduated and currently working as a Software Engineering Teaching Fellow for the next wave of scholarship engineering students.
 
-Always eager and hungry to learn, I am driven by incremental progress to unbox complex problems and hope to bring people closer together through social value, physical and mental betterment, community, and impactful experiences.
+In my free time, I am also a co-organizer and moderator of a Developer Circle in NYC, a localized community of Innovators hoping to spread the awareness of modern web development and emerging technology such as machine learning and artificial intelligence.
+
+Always eager and hungry to learn, I am driven by incremental progress to unbox complex problems and hope to bring the world closer together through social value, physical and mental betterment, community, and empowerment.
 
 -RL

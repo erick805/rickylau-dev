@@ -135,7 +135,7 @@ description: "Resources for your brain"
 
 ##Other Blogs
 
-[How to test your React apps with the React Testing Library](https://www.freecodecamp.org/news/test-react-apps-with-react-testing-library/) by Thomas Lombart
+[How to test React with Jest](https://www.robinwieruch.de/react-testing-jest) by Robin Wieruch
 
 [Master the JavaScript Interview: What is a Closure?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36) by Eric Elliott
 

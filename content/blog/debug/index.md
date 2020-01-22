@@ -9,11 +9,11 @@ Hi, this brief guide is written to give you beginner-friendly tips to follow, so
 
 _We will go over two examples:_
 
-**1**. **Jasmine & vanilla JavaScript**
+**1**. **Jasmine** & **vanilla JavaScript**
 
-**2**. **Mocha Enzyme & React JSX**
+**2**. **Mocha Enzyme** & **React JSX**
 
-##C - Clean your code environment & make sure you are in the right test suite.
+##C - Clean your code environment & make sure you are in the right test suite
 
 **Isolate your unit test**:
 
@@ -61,7 +61,7 @@ Otherwise, the unit test is giving us a hint - apparently, our stack class is no
 
 ![](2019-09-07-20-59-53.png)
 
-_This brings our attention to the beginning and end of our function - lines 40-43 and 25-28_
+_This brings our attention to the beginning and end of our class - lines 40-43 and 25-28_
 
 After examining our code, I noticed that I was missing a closing bracket because when I clicked on the last bracket on our class.
 
@@ -95,13 +95,13 @@ This indicates lines _30–32_ of our `getStack()` method. I realized I misspell
 32 }
 ```
 
-##R - Read the developer tools & testing environment error messages.
+##R - Read the developer tools & testing environment error messages
 
 ```js
 01 import React from 'react'
-02 // C - clean your code environment & make sure you are in the right test suite.
+02 // C - clean your code environment & make sure you are in the right test suite
 03 // A - approach your where and what to console.log
-04 // R - read the developer tools & testing environment error messages.
+04 // R - read the developer tools & testing environment error messages
 05 // D - double check if you have any infinite logic and/or within the right scope
 06
 07 export default const AdoptionForm = (props) => {
@@ -120,7 +120,7 @@ This indicates lines _30–32_ of our `getStack()` method. I realized I misspell
 ```
 
 ![](2019-09-07-21-19-26.png)
-**_Picture A_-Node.js**
+**_Picture A_-Terminal**
 
 ![](2019-09-07-21-20-21.png)
 **_Picture B_-Developer Tools**
@@ -141,7 +141,7 @@ When debugging sometimes it is smarter to target our bigger data sets and chip a
 
 By looking at the big picture you can ensure a wider range of data consistency and catch any reference errors earlier while saving yourself a step in the process.
 
-Since we know our pets array is being mapped into each pet object, why don't we console.log our (pet ) object to see what we are outputting, at the same time this enables us to see what keys and values are inside this pet object.
+Since we know our pets array is being mapped into each pet object, why don't we console.log our pet object to see what we are outputting, at the same time this enables us to see what keys and values are inside this pet object.
 
 ```js
 16 <button type="button onClick={adoptPet}> Adopt Me! </button>
@@ -151,7 +151,7 @@ Since we know our pets array is being mapped into each pet object, why don't we 
 
 ![](2019-09-07-21-32-07.png)
 
-_Do you see something wrong? I hit save and I get this scary error message in Node.js._
+_Do you see something wrong? I hit save and I get this scary error message in my terminal._
 
 _Our testing environment is telling us there is something wrong with console.log(pet) as indicated by two red arrows._
 
@@ -177,7 +177,7 @@ We replace our logic inside with a pet string comma-delimited with a pet variabl
 18  <option  key={console.log("pet: ", pet)}>{pet.name}</option>
 ```
 
-_I check my node environment for expected outputs and notice we are getting back an object with a name key._
+_I check my terminal for expected outputs and notice we are getting back an object with a name key._
 
 ![](2019-10-10-00-23-07.png)
 

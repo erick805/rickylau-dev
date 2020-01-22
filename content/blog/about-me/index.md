@@ -30,3 +30,5 @@ In my free time, I am also a co-organizer and moderator of a Developer Circle in
 Always eager and hungry to learn, I am driven by incremental progress to unbox complex problems and hope to bring the world closer together through social value, physical and mental betterment, community, and empowerment.
 
 -RL
+
+![](team.png)

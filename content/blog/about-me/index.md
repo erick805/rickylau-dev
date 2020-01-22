@@ -3,7 +3,7 @@ title: About Me
 description: " "
 ---
 
-Just your everyday learner, human and tech programmer.
+Just your everyday learner, human, and tech programmer.
 
 ![](profile-pic.jpg)
 
@@ -27,7 +27,7 @@ Where I graduated and currently working as a Software Engineering Teaching Fello
 
 In my free time, I am also a co-organizer and moderator of a Developer Circle in NYC, a localized community of Innovators hoping to spread the awareness of modern web development and emerging technology such as machine learning and artificial intelligence.
 
-Always eager and hungry to learn, I am driven by incremental progress to unbox complex problems and hope to bring the world closer together through social value, physical and mental betterment, community, and empowerment.
+Always eager and hungry to learn, I am driven by incremental progress to unbox complex problems and hope to bring the world closer together through social value, physical & mental betterment, community, and empowerment.
 
 -RL
 

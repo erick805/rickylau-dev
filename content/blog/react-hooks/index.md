@@ -17,7 +17,7 @@ First we will briefly discuss state, then we will go over what **hooks** and **c
 
 **2**. **Side Effects**: **Unrelated mixed in logic** in lifecycle methods can get repetitive, and cause unnecessary _side effects_.
 
-**3**. **Optimization**: Classes are simply **not optimal for compilers**.
+**3**. **Optimization**: Hooks might **reduce** your **bundle size**.
 
 ## Managing Local State
 

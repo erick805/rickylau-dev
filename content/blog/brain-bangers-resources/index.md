@@ -81,6 +81,8 @@ description: "Resources for your brain"
 
 [Sequelize Documentation](https://sequelizedocs.fullstackacademy.com/) by Fullstack Academy
 
+[Gatsby.js Documentation](https://www.gatsbyjs.org/docs/) by Gatsby.js
+
 ##References
 
 [MDN web docs - Resources for developers, by developers.](https://developer.mozilla.org/en-US/) by Mozilla and individual contributors
@@ -109,6 +111,8 @@ description: "Resources for your brain"
 
 [Coolors - Super fast color schemes generator](https://coolors.co/) by Coolors
 
+[Anime.js - CSS animations](https://animejs.com/) by anime.js
+
 ##Tools
 
 [Parcel - Blazing fast, zero config web app bundler](https://parceljs.org/) by Devon Govett & open source
@@ -132,6 +136,20 @@ description: "Resources for your brain"
 [GraphCMS - Headless CMS for GraphQL content APIs](https://graphcms.com/) by GraphCMS team
 
 [Prisma - replacement for traditional ORMs in GraphQL, REST, Microservices](https://www.prisma.io/) by Prisma
+
+[Cloudinary - Image and Video Management solutions](https://cloudinary.com/solutions)
+
+[Howler.js - Audio library for the modern web](https://howlerjs.com/) by James Simpson & contributors
+
+[Chart.js - Simple yet flexible JavaScript charts](https://www.chartjs.org/) by Chart.js
+
+[Reveal.js - HTML Presentation Framework](https://revealjs.com/) by Hakim El Hattab & contributors
+
+[three.js - Cross-browser 3D WebGL graphics](https://threejs.org/) by three.js
+
+[Pixi.js - 2D WebGL renderer ](https://www.pixijs.com/) by Mat Groves and the PixiJS team
+
+[Video.js - HTML5 web video player](https://videojs.com/) by Video.js
 
 ##Other Blogs
 

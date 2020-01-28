@@ -1,6 +1,6 @@
 ---
 title: Space Runner
-description: First person endless runner with webcam capture motion machine learning using Tensorflow.
+description: First person endless runner with webcam capture motion machine learning using Tensorflow and three.js.
 ---
 
 **Github**: [https://github.com/space-runner-prototype/space-runner](https://github.com/space-runner-prototype/space-runner)

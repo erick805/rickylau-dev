@@ -227,7 +227,7 @@ _Here is a better read on lifecycle methods - [React Lifecycle Methods - A D
 **Function Example** with the **`useEffect()`** hook:
 
 ```
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 function Counter() {
   const [counter, incrementCounter] = useState(0)
@@ -323,7 +323,7 @@ With **hooks**, we can simply pass a second argument into `useEffect()` as an ar
 Keep in mind, if you pass an empty array, the hook doesn't run when updating the component at all because there is nothing to watch for. This is useful when you are fetching data in a loop, and you only want to fetch it on `componentDidMount()`, therefore stopping the loop.
 
 ```
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 function Counter() {
   const [counter, incrementCounter] = useState(0)

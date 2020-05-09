@@ -1,7 +1,7 @@
 {
   "name": "rickylau-dev",
   "private": true,
-  "description": "My Portfolio & Blog",
+  "description": "My Portfolio and Blog Posts",
   "version": "0.1.0",
   "author": "Ricky Lau",
   "bugs": {
@@ -43,10 +43,6 @@
   ],
   "license": "MIT",
   "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

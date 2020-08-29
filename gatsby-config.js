@@ -1,10 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Hi there, my name is Ricky Lau.`,
-    author: `Ricky Lau`,
+    title: `Hi there, my name is Rick Lau.`,
+    author: `Rick Lau`,
     description: `My Portfolio and Blog Posts`,
-    siteUrl: `https://rickylau.dev`,
-    github: `https://github.com/rickylaufitness`,
     portfolio: `portfolio`,
   },
   plugins: [
@@ -55,13 +53,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Ricky Lau Portfolio & Blog`,
+        name: `Portfolio & Blog`,
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/profile-pic.jpg`,
+        icon: ``,
       },
     },
     `gatsby-plugin-offline`,

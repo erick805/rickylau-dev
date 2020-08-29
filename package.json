@@ -1,9 +1,9 @@
 {
-  "name": "rickylau-dev",
+  "name": "ricklau-dev",
   "private": true,
   "description": "My Portfolio and Blog Posts",
   "version": "0.1.0",
-  "author": "Ricky Lau",
+  "author": "Rick Lau",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
